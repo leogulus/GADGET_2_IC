@@ -37,7 +37,7 @@ N_BULGE=  0;        /* number of bulge particles */
 - <phi1/2>: the spherical ‘phi’ values that the angular momentum of galaxy 1/2
 - <r_min>: the (keplarian calculated) pericenter passage distance
 - <r_start>: the initial offset of the two galaxies
-- <eccentricity>: 
+- <eccentricity>: eccentricity of the orbit
 - <fname_galout>: output name "name.dat"
 
 
