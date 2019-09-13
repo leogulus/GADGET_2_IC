@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+./CombineGalaxies ../MakeNewDisk/vc3d.dat 30 60 ../MakeNewDisk/vc3d.dat -30 45 5.0 100.0 ../ICs/vc3vc3e_c7.dat
+./CombineGalaxies ../MakeNewDisk/vc3e.dat 30 60 ../MakeNewDisk/vc3e.dat -30 45 5.0 100.0 ../ICs/vc3vc3e_c11.dat
+./CombineGalaxies ../MakeNewDisk/vc3i.dat 30 60 ../MakeNewDisk/vc3i.dat -30 45 5.0 100.0 ../ICs/vc3vc3e_c5.dat
+./CombineGalaxies ../MakeNewDisk/vc3j.dat 30 60 ../MakeNewDisk/vc3j.dat -30 45 5.0 100.0 ../ICs/vc3vc3e_c13.dat
+
+
+#./CombineGalaxies ../MakeNewDisk/vc3d.dat 0 0 ../MakeNewDisk/vc3d.dat 0 0 5.0 100.0 ../ICs/vc3vc3h_c7.dat
+#./CombineGalaxies ../MakeNewDisk/vc3e.dat 0 0 ../MakeNewDisk/vc3e.dat 0 0 5.0 100.0 ../ICs/vc3vc3h_c11.dat
+#./CombineGalaxies ../MakeNewDisk/vc3i.dat 0 0 ../MakeNewDisk/vc3i.dat 0 0 5.0 100.0 ../ICs/vc3vc3h_c5.dat
+#./CombineGalaxies ../MakeNewDisk/vc3j.dat 0 0 ../MakeNewDisk/vc3j.dat 0 0 5.0 100.0 ../ICs/vc3vc3h_c13.dat
+
+
+#./CombineGalaxies ../MakeNewDisk/vc3d.dat -109 -30 ../MakeNewDisk/vc3d.dat 71 -30 5.0 100.0 ../ICs/vc3vc3k_c7.dat
+#./CombineGalaxies ../MakeNewDisk/vc3e.dat -109 -30 ../MakeNewDisk/vc3e.dat 71 -30 5.0 100.0 ../ICs/vc3vc3k_c11.dat
+#./CombineGalaxies ../MakeNewDisk/vc3i.dat -109 -30 ../MakeNewDisk/vc3i.dat 71 -30 5.0 100.0 ../ICs/vc3vc3k_c5.dat
+#./CombineGalaxies ../MakeNewDisk/vc3j.dat -109 -30 ../MakeNewDisk/vc3j.dat 71 -30 5.0 100.0 ../ICs/vc3vc3k_c13.dat
+
+
+
+

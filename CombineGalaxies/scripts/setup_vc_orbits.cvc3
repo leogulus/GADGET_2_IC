@@ -1,0 +1,92 @@
+#!/bin/bash
+
+#./CombineGalaxies ../MakeNewDisk/cvc3c.dat   0  0 ../MakeNewDisk/cvc3c.dat 0 0 5.0 100.0 ../ICs/cvc3vc3h.dat
+#./CombineGalaxies ../MakeNewDisk/cvc3c.dat 180  0 ../MakeNewDisk/cvc3c.dat 0 0 5.0 100.0 ../ICs/cvc3vc3b.dat
+#./CombineGalaxies ../MakeNewDisk/cvc3c.dat 180  0 ../MakeNewDisk/cvc3c.dat 180 0 5.0 100.0 ../ICs/cvc3vc3c.dat
+#./CombineGalaxies ../MakeNewDisk/cvc3c.dat  90  0 ../MakeNewDisk/cvc3c.dat 0 0 5.0 100.0 ../ICs/cvc3vc3d.dat
+#./CombineGalaxies ../MakeNewDisk/cvc3c.dat  30 60 ../MakeNewDisk/cvc3c.dat -30 45 5.0 100.0 ../ICs/cvc3vc3e.dat
+#./CombineGalaxies ../MakeNewDisk/cvc3c.dat  60 60 ../MakeNewDisk/cvc3c.dat 150 0 5.0 100.0 ../ICs/cvc3vc3f.dat
+#./CombineGalaxies ../MakeNewDisk/cvc3c.dat 150  0 ../MakeNewDisk/cvc3c.dat -30 45 5.0 100.0 ../ICs/cvc3vc3g.dat
+
+#./CombineGalaxies ../MakeNewDisk/cvc3c.dat    0   0 ../MakeNewDisk/cvc3c.dat  71  30 5.0 100.0 ../ICs/cvc3vc3i.dat
+#./CombineGalaxies ../MakeNewDisk/cvc3c.dat -109  90 ../MakeNewDisk/cvc3c.dat  71  90 5.0 100.0 ../ICs/cvc3vc3j.dat
+#./CombineGalaxies ../MakeNewDisk/cvc3c.dat -109 -30 ../MakeNewDisk/cvc3c.dat  71 -30 5.0 100.0 ../ICs/cvc3vc3k.dat
+#./CombineGalaxies ../MakeNewDisk/cvc3c.dat -109  30 ../MakeNewDisk/cvc3c.dat 180   0 5.0 100.0 ../ICs/cvc3vc3l.dat
+#./CombineGalaxies ../MakeNewDisk/cvc3c.dat    0   0 ../MakeNewDisk/cvc3c.dat  71  90 5.0 100.0 ../ICs/cvc3vc3m.dat
+#./CombineGalaxies ../MakeNewDisk/cvc3c.dat -109 -30 ../MakeNewDisk/cvc3c.dat  71  30 5.0 100.0 ../ICs/cvc3vc3n.dat
+#./CombineGalaxies ../MakeNewDisk/cvc3c.dat -109  30 ../MakeNewDisk/cvc3c.dat  71 -30 5.0 100.0 ../ICs/cvc3vc3o.dat
+#./CombineGalaxies ../MakeNewDisk/cvc3c.dat -109  90 ../MakeNewDisk/cvc3c.dat 180   0 5.0 100.0 ../ICs/cvc3vc3p.dat
+
+
+
+#./CombineGalaxies ../MakeNewDisk/cvc0.dat   0  0 ../MakeNewDisk/cvc0.dat 0 0 5.0 100.0 ../ICs/cvc0vc0h.dat
+#./CombineGalaxies ../MakeNewDisk/cvc1.dat   0  0 ../MakeNewDisk/cvc1.dat 0 0 5.0 100.0 ../ICs/cvc1vc1h.dat
+#./CombineGalaxies ../MakeNewDisk/cvc2.dat   0  0 ../MakeNewDisk/cvc2.dat 0 0 5.0 100.0 ../ICs/cvc2vc2h.dat
+#./CombineGalaxies ../MakeNewDisk/cvc3b.dat   0  0 ../MakeNewDisk/cvc3b.dat 0 0 5.0 100.0 ../ICs/cvc3bvc3bh.dat
+#./CombineGalaxies ../MakeNewDisk/cvc4.dat   0  0 ../MakeNewDisk/cvc4.dat 0 0 5.0 100.0 ../ICs/cvc4vc4h.dat
+#./CombineGalaxies ../MakeNewDisk/cvc5.dat   0  0 ../MakeNewDisk/cvc5.dat 0 0 5.0 100.0 ../ICs/cvc5vc5h.dat
+#./CombineGalaxies ../MakeNewDisk/cvc6.dat   0  0 ../MakeNewDisk/cvc6.dat 0 0 5.0 100.0 ../ICs/cvc6vc6h.dat
+
+
+# different size IC's
+# --------------------
+#./CombineGalaxies ../MakeNewDisk/cvc0.dat   30  60 ../MakeNewDisk/cvc0.dat -30 45 5.0 100.0 ../ICs/cvc0vc0e.dat
+#./CombineGalaxies ../MakeNewDisk/cvc1.dat   30  60 ../MakeNewDisk/cvc1.dat -30 45 5.0 100.0 ../ICs/cvc1vc1e.dat
+#./CombineGalaxies ../MakeNewDisk/cvc2.dat   30  60 ../MakeNewDisk/cvc2.dat -30 45 5.0 100.0 ../ICs/cvc2vc2e.dat
+#./CombineGalaxies ../MakeNewDisk/cvc3b.dat   30  60 ../MakeNewDisk/cvc3b.dat -30 45 5.0 100.0 ../ICs/cvc3bvc3be.dat
+#./CombineGalaxies ../MakeNewDisk/cvc4.dat   30  60 ../MakeNewDisk/cvc4.dat -30 45 5.0 100.0 ../ICs/cvc4vc4e.dat
+#./CombineGalaxies ../MakeNewDisk/cvc5.dat   30  60 ../MakeNewDisk/cvc5.dat -30 45 5.0 100.0 ../ICs/cvc5vc5e.dat
+#./CombineGalaxies ../MakeNewDisk/cvc6.dat   30  60 ../MakeNewDisk/cvc6.dat -30 45 5.0 100.0 ../ICs/cvc6vc6e.dat
+
+
+
+# small vc's (0-2) with a bulge
+# -----------------------------
+#./CombineGalaxies ../MakeNewDisk/cvcb0.dat   0  0 ../MakeNewDisk/cvcb0.dat 0 0 5.0 100.0 ../ICs/cvcb0vcb0h.dat
+#./CombineGalaxies ../MakeNewDisk/cvcb1.dat   0  0 ../MakeNewDisk/cvcb1.dat 0 0 5.0 100.0 ../ICs/cvcb1vcb1h.dat
+#./CombineGalaxies ../MakeNewDisk/cvcb2.dat   0  0 ../MakeNewDisk/cvcb2.dat 0 0 5.0 100.0 ../ICs/cvcb2vcb2h.dat
+#./CombineGalaxies ../MakeNewDisk/cvcb0.dat   30  60 ../MakeNewDisk/cvcb0.dat -30 45 5.0 100.0 ../ICs/cvcb0vcb0e.dat
+#./CombineGalaxies ../MakeNewDisk/cvcb1.dat   30  60 ../MakeNewDisk/cvcb1.dat -30 45 5.0 100.0 ../ICs/cvcb1vcb1e.dat
+#./CombineGalaxies ../MakeNewDisk/cvcb2.dat   30  60 ../MakeNewDisk/cvcb2.dat -30 45 5.0 100.0 ../ICs/cvcb2vcb2e.dat
+
+
+
+# larger vc's (4-6) without a bulge
+# ----------------------------------
+#./CombineGalaxies ../MakeNewDisk/cvc4nb.dat   0  0 ../MakeNewDisk/cvc4nb.dat 0 0 5.0 100.0 ../ICs/cvc4nbmmh.dat
+#./CombineGalaxies ../MakeNewDisk/cvc5nb.dat   0  0 ../MakeNewDisk/cvc5nb.dat 0 0 5.0 100.0 ../ICs/cvc5nbmmh.dat
+#./CombineGalaxies ../MakeNewDisk/cvc6nb.dat   0  0 ../MakeNewDisk/cvc6nb.dat 0 0 5.0 100.0 ../ICs/cvc6nbmmh.dat
+#./CombineGalaxies ../MakeNewDisk/cvc4nb.dat   30  60 ../MakeNewDisk/cvc4nb.dat -30 45 5.0 100.0 ../ICs/cvc4nbmme.dat
+#./CombineGalaxies ../MakeNewDisk/cvc5nb.dat   30  60 ../MakeNewDisk/cvc5nb.dat -30 45 5.0 100.0 ../ICs/cvc5nbmme.dat
+#./CombineGalaxies ../MakeNewDisk/cvc6nb.dat   30  60 ../MakeNewDisk/cvc6nb.dat -30 45 5.0 100.0 ../ICs/cvc6nbmme.dat
+
+
+
+
+
+# various orbits
+# ----------------
+./CombineGalaxies ../MakeNewDisk/cvc/cvc3c.dat 0 0 ../MakeNewDisk/cvc/cvc3c.dat 0 0 2.5 100.0 /raid4/tcox/ICs/cvc/cvc3h1.dat
+./CombineGalaxies ../MakeNewDisk/cvc/cvc3c.dat 0 0 ../MakeNewDisk/cvc/cvc3c.dat 0 0 10.0 100.0 /raid4/tcox/ICs/cvc/cvc3h2.dat
+./CombineGalaxies ../MakeNewDisk/cvc/cvc3c.dat 0 0 ../MakeNewDisk/cvc/cvc3c.dat 0 0 15.0 100.0 /raid4/tcox/ICs/cvc/cvc3h3.dat
+./CombineGalaxies ../MakeNewDisk/cvc/cvc3c.dat 0 0 ../MakeNewDisk/cvc/cvc3c.dat 0 0 20.0 100.0 /raid4/tcox/ICs/cvc/cvc3h4.dat
+./CombineGalaxies ../MakeNewDisk/cvc/cvc3c.dat 0 0 ../MakeNewDisk/cvc/cvc3c.dat 0 0 40.0 100.0 /raid4/tcox/ICs/cvc/cvc3h5.dat
+./CombineGalaxies ../MakeNewDisk/cvc/cvc3c.dat 0 0 ../MakeNewDisk/cvc/cvc3c.dat 0 0 30.0 100.0 /raid4/tcox/ICs/cvc/cvc3h6.dat
+
+#./CombineGalaxies ../MakeNewDisk/cvc/vc3c.dat 30 60 ../MakeNewDisk/cvc/cvc3c.dat -30 45 2.5 100.0 /raid4/tcox/ICs/cvc/cvc3e1.dat
+#./CombineGalaxies ../MakeNewDisk/cvc/vc3c.dat 30 60 ../MakeNewDisk/cvc/cvc3c.dat -30 45 10.0 100.0 /raid4/tcox/ICs/cvc/cvc3e2.dat
+#./CombineGalaxies ../MakeNewDisk/cvc/vc3c.dat 30 60 ../MakeNewDisk/cvc/cvc3c.dat -30 45 15.0 100.0 /raid4/tcox/ICs/cvc/cvc3e3.dat
+#./CombineGalaxies ../MakeNewDisk/cvc/vc3c.dat 30 60 ../MakeNewDisk/cvc/cvc3c.dat -30 45 20.0 100.0 /raid4/tcox/ICs/cvc/cvc3e4.dat
+#./CombineGalaxies ../MakeNewDisk/cvc/vc3c.dat 30 60 ../MakeNewDisk/cvc/cvc3c.dat -30 45 40.0 100.0 /raid4/tcox/ICs/cvc/cvc3e5.dat
+#./CombineGalaxies ../MakeNewDisk/cvc/vc3c.dat 30 60 ../MakeNewDisk/cvc/cvc3c.dat -30 45 30.0 100.0 /raid4/tcox/ICs/cvc/cvc3e6.dat
+
+#./CombineGalaxies ../MakeNewDisk/cvc/cvc3c.dat -109 -30 ../MakeNewDisk/cvc/cvc3c.dat 71 -30  2.5 100.0 /raid4/tcox/ICs/cvc/cvc3k1.dat
+#./CombineGalaxies ../MakeNewDisk/cvc/cvc3c.dat -109 -30 ../MakeNewDisk/cvc/cvc3c.dat 71 -30 10.0 100.0 /raid4/tcox/ICs/cvc/cvc3k2.dat
+#./CombineGalaxies ../MakeNewDisk/cvc/cvc3c.dat -109 -30 ../MakeNewDisk/cvc/cvc3c.dat 71 -30 15.0 100.0 /raid4/tcox/ICs/cvc/cvc3k3.dat
+#./CombineGalaxies ../MakeNewDisk/cvc/cvc3c.dat -109 -30 ../MakeNewDisk/cvc/cvc3c.dat 71 -30 20.0 100.0 /raid4/tcox/ICs/cvc/cvc3k4.dat
+#./CombineGalaxies ../MakeNewDisk/cvc/cvc3c.dat -109 -30 ../MakeNewDisk/cvc/cvc3c.dat 71 -30 40.0 100.0 /raid4/tcox/ICs/cvc/cvc3k5.dat
+#./CombineGalaxies ../MakeNewDisk/cvc/cvc3c.dat -109 -30 ../MakeNewDisk/cvc/cvc3c.dat 71 -30 30.0 100.0 /raid4/tcox/ICs/cvc/cvc3k6.dat
+
+
+
+

@@ -1,0 +1,19 @@
+#
+# initial condition with mbh different
+#
+
+Galaxy 1 has Scalefactor = 29.2702
+Galaxy 2 has Scalefactor = 29.2702
+rdotstart = -37.5413
+phidotstart = 6.70297e-05
+r*phidotstart = 0.00670297
+Relative V= 37.5494
+correcting orbit for dark halo potential...
+galaxy 1 moved to: ( -43.9794 | -23.726 | 0 )
+galaxy 2 moved to: ( 43.9794 | 23.726 | -0 )
+velocity galaxy 1: ( 155.362 | 32.3648 | 0 )
+velocity galaxy 2: ( -155.362 | -32.3648 | -0 )
+
+
+
+

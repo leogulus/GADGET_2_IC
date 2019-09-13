@@ -1,0 +1,11 @@
+#!/bin/sh
+#BSUB -q normal
+#BSUB -J cg
+#BSUB -n 1
+#BSUB -u ptorrey@cfa.harvard.edu
+#BSUB -N
+
+
+./CombineGalaxies /n/home/ptorrey/MakeNewDisk/PTtest/MWtestSetup.dat 0 0 /n/home/ptorrey/MakeNewDisk/PTtest/MWtestSetup.dat 0 0 5.0 100.0 SmallSubfind.dat > SmallSubfind.output
+
+

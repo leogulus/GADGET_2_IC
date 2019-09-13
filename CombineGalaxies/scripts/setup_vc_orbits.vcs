@@ -1,0 +1,167 @@
+#!/bin/bash
+
+
+#  e
+# ---
+#./CombineGalaxies ../MakeNewDisk/vc/vc0x2.dat 30 60 ../MakeNewDisk/vc/vc0x2.dat -30 45 5.0 100.0 /raid4/tcox/ICs/vc/vc0vc0x2_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1x2.dat 30 60 ../MakeNewDisk/vc/vc1x2.dat -30 45 5.0 100.0 /raid4/tcox/ICs/vc/vc1vc1x2_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2x2.dat 30 60 ../MakeNewDisk/vc/vc2x2.dat -30 45 5.0 100.0 /raid4/tcox/ICs/vc/vc2vc2x2_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4x2.dat 30 60 ../MakeNewDisk/vc/vc4x2.dat -30 45 5.0 100.0 /raid4/tcox/ICs/vc/vc4vc4x2_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5x2.dat 30 60 ../MakeNewDisk/vc/vc5x2.dat -30 45 5.0 100.0 /raid4/tcox/ICs/vc/vc5vc5x2_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6x2.dat 30 60 ../MakeNewDisk/vc/vc6x2.dat -30 45 5.0 100.0 /raid4/tcox/ICs/vc/vc6vc6x2_e.dat
+# ---
+#./CombineGalaxies ../MakeNewDisk/vc/vc0x2.dat 30 60 ../MakeNewDisk/vc/vc0x2.dat -30 45  2.0  50.0 /raid4/tcox/ICs/vc/vc0vc0x2_e2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1x2.dat 30 60 ../MakeNewDisk/vc/vc1x2.dat -30 45  3.0  80.0 /raid4/tcox/ICs/vc/vc1vc1x2_e2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2x2.dat 30 60 ../MakeNewDisk/vc/vc2x2.dat -30 45  4.0 110.0 /raid4/tcox/ICs/vc/vc2vc2x2_e2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4x2.dat 30 60 ../MakeNewDisk/vc/vc4x2.dat -30 45  8.0 150.0 /raid4/tcox/ICs/vc/vc4vc4x2_e2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5x2.dat 30 60 ../MakeNewDisk/vc/vc5x2.dat -30 45 10.0 250.0 /raid4/tcox/ICs/vc/vc5vc5x2_e2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6x2.dat 30 60 ../MakeNewDisk/vc/vc6x2.dat -30 45 15.0 350.0 /raid4/tcox/ICs/vc/vc6vc6x2_e2.dat
+
+#./CombineGalaxies ../MakeNewDisk/vc/vc0z.dat 30 60 ../MakeNewDisk/vc/vc0z.dat -30 45 2.0 50.0 /raid4/tcox/ICs/vc/vc0vc0z_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1z.dat 30 60 ../MakeNewDisk/vc/vc1z.dat -30 45 3.0 80.0 /raid4/tcox/ICs/vc/vc1vc1z_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2z.dat 30 60 ../MakeNewDisk/vc/vc2z.dat -30 45 4.0 110.0 /raid4/tcox/ICs/vc/vc2vc2z_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4z.dat 30 60 ../MakeNewDisk/vc/vc4z.dat -30 45 8.0 150.0 /raid4/tcox/ICs/vc/vc4vc4z_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5z.dat 30 60 ../MakeNewDisk/vc/vc5z.dat -30 45 10.0 250.0 /raid4/tcox/ICs/vc/vc5vc5z_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6z.dat 30 60 ../MakeNewDisk/vc/vc6z.dat -30 45 15.0 350.0 /raid4/tcox/ICs/vc/vc6vc6z_e.dat
+
+#./CombineGalaxies ../MakeNewDisk/vc/vc0v.dat 30 60 ../MakeNewDisk/vc/vc0v.dat -30 45  2.0  50.0 /raid4/tcox/ICs/vc/vc0vc0v_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1v.dat 30 60 ../MakeNewDisk/vc/vc1v.dat -30 45  3.0  80.0 /raid4/tcox/ICs/vc/vc1vc1v_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2v.dat 30 60 ../MakeNewDisk/vc/vc2v.dat -30 45  4.0 110.0 /raid4/tcox/ICs/vc/vc2vc2v_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4v.dat 30 60 ../MakeNewDisk/vc/vc4v.dat -30 45  8.0 150.0 /raid4/tcox/ICs/vc/vc4vc4v_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5v.dat 30 60 ../MakeNewDisk/vc/vc5v.dat -30 45 10.0 250.0 /raid4/tcox/ICs/vc/vc5vc5v_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6v.dat 30 60 ../MakeNewDisk/vc/vc6v.dat -30 45 15.0 350.0 /raid4/tcox/ICs/vc/vc6vc6v_e.dat
+
+#./CombineGalaxies ../MakeNewDisk/vc/vc0y.dat 30 60 ../MakeNewDisk/vc/vc0y.dat -30 45  2.0  50.0 /raid4/tcox/ICs/vc/vc0vc0y_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1y.dat 30 60 ../MakeNewDisk/vc/vc1y.dat -30 45  3.0  80.0 /raid4/tcox/ICs/vc/vc1vc1y_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2y.dat 30 60 ../MakeNewDisk/vc/vc2y.dat -30 45  4.0 110.0 /raid4/tcox/ICs/vc/vc2vc2y_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc3y.dat 30 60 ../MakeNewDisk/vc/vc3y.dat -30 45  4.0 110.0 /raid4/tcox/ICs/vc/vc3vc3y_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4y.dat 30 60 ../MakeNewDisk/vc/vc4y.dat -30 45  8.0 150.0 /raid4/tcox/ICs/vc/vc4vc4y_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5y.dat 30 60 ../MakeNewDisk/vc/vc5y.dat -30 45 10.0 250.0 /raid4/tcox/ICs/vc/vc5vc5y_e.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6y.dat 30 60 ../MakeNewDisk/vc/vc6y.dat -30 45 15.0 350.0 /raid4/tcox/ICs/vc/vc6vc6y_e.dat
+
+
+
+#  h
+# ---
+#./CombineGalaxies ../MakeNewDisk/vc/vc0x2.dat 0 0 ../MakeNewDisk/vc/vc0x2.dat 0 0 5.0 100.0 /raid4/tcox/ICs/vc/vc0vc0x2_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1x2.dat 0 0 ../MakeNewDisk/vc/vc1x2.dat 0 0 5.0 100.0 /raid4/tcox/ICs/vc/vc1vc1x2_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2x2.dat 0 0 ../MakeNewDisk/vc/vc2x2.dat 0 0 5.0 100.0 /raid4/tcox/ICs/vc/vc2vc2x2_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4x2.dat 0 0 ../MakeNewDisk/vc/vc4x2.dat 0 0 5.0 100.0 /raid4/tcox/ICs/vc/vc4vc4x2_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5x2.dat 0 0 ../MakeNewDisk/vc/vc5x2.dat 0 0 5.0 100.0 /raid4/tcox/ICs/vc/vc5vc5x2_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6x2.dat 0 0 ../MakeNewDisk/vc/vc6x2.dat 0 0 5.0 100.0 /raid4/tcox/ICs/vc/vc6vc6x2_h.dat
+# ---
+#./CombineGalaxies ../MakeNewDisk/vc/vc0x2.dat 0 0 ../MakeNewDisk/vc/vc0x2.dat 0 0  2.0  50.0 /raid4/tcox/ICs/vc/vc0vc0x2_h2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1x2.dat 0 0 ../MakeNewDisk/vc/vc1x2.dat 0 0  3.0  80.0 /raid4/tcox/ICs/vc/vc1vc1x2_h2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2x2.dat 0 0 ../MakeNewDisk/vc/vc2x2.dat 0 0  4.0 110.0 /raid4/tcox/ICs/vc/vc2vc2x2_h2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4x2.dat 0 0 ../MakeNewDisk/vc/vc4x2.dat 0 0  8.0 150.0 /raid4/tcox/ICs/vc/vc4vc4x2_h2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5x2.dat 0 0 ../MakeNewDisk/vc/vc5x2.dat 0 0 10.0 250.0 /raid4/tcox/ICs/vc/vc5vc5x2_h2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6x2.dat 0 0 ../MakeNewDisk/vc/vc6x2.dat 0 0 15.0 350.0 /raid4/tcox/ICs/vc/vc6vc6x2_h2.dat
+
+#./CombineGalaxies ../MakeNewDisk/vc/vc0z.dat 0 0 ../MakeNewDisk/vc/vc0z.dat 0 0 2.0 50.0 /raid4/tcox/ICs/vc/vc0vc0z_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1z.dat 0 0 ../MakeNewDisk/vc/vc1z.dat 0 0 3.0 80.0 /raid4/tcox/ICs/vc/vc1vc1z_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2z.dat 0 0 ../MakeNewDisk/vc/vc2z.dat 0 0 4.0 110.0 /raid4/tcox/ICs/vc/vc2vc2z_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4z.dat 0 0 ../MakeNewDisk/vc/vc4z.dat 0 0 8.0 150.0 /raid4/tcox/ICs/vc/vc4vc4z_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5z.dat 0 0 ../MakeNewDisk/vc/vc5z.dat 0 0 10.0 250.0 /raid4/tcox/ICs/vc/vc5vc5z_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6z.dat 0 0 ../MakeNewDisk/vc/vc6z.dat 0 0 15.0 350.0 /raid4/tcox/ICs/vc/vc6vc6z_h.dat
+
+#./CombineGalaxies ../MakeNewDisk/vc/vc0v.dat 0 0 ../MakeNewDisk/vc/vc0v.dat 0 0  2.0  50.0 /raid4/tcox/ICs/vc/vc0vc0v_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1v.dat 0 0 ../MakeNewDisk/vc/vc1v.dat 0 0  3.0  80.0 /raid4/tcox/ICs/vc/vc1vc1v_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2v.dat 0 0 ../MakeNewDisk/vc/vc2v.dat 0 0  4.0 110.0 /raid4/tcox/ICs/vc/vc2vc2v_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4v.dat 0 0 ../MakeNewDisk/vc/vc4v.dat 0 0  8.0 150.0 /raid4/tcox/ICs/vc/vc4vc4v_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5v.dat 0 0 ../MakeNewDisk/vc/vc5v.dat 0 0 10.0 250.0 /raid4/tcox/ICs/vc/vc5vc5v_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6v.dat 0 0 ../MakeNewDisk/vc/vc6v.dat 0 0 15.0 350.0 /raid4/tcox/ICs/vc/vc6vc6v_h.dat
+
+#./CombineGalaxies ../MakeNewDisk/vc/vc0y.dat 0 0 ../MakeNewDisk/vc/vc0y.dat 0 0  2.0  50.0 /raid4/tcox/ICs/vc/vc0vc0y_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1y.dat 0 0 ../MakeNewDisk/vc/vc1y.dat 0 0  3.0  80.0 /raid4/tcox/ICs/vc/vc1vc1y_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2y.dat 0 0 ../MakeNewDisk/vc/vc2y.dat 0 0  4.0 110.0 /raid4/tcox/ICs/vc/vc2vc2y_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc3y.dat 0 0 ../MakeNewDisk/vc/vc3y.dat 0 0  4.0 110.0 /raid4/tcox/ICs/vc/vc3vc3y_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4y.dat 0 0 ../MakeNewDisk/vc/vc4y.dat 0 0  8.0 150.0 /raid4/tcox/ICs/vc/vc4vc4y_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5y.dat 0 0 ../MakeNewDisk/vc/vc5y.dat 0 0 10.0 250.0 /raid4/tcox/ICs/vc/vc5vc5y_h.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6y.dat 0 0 ../MakeNewDisk/vc/vc6y.dat 0 0 15.0 350.0 /raid4/tcox/ICs/vc/vc6vc6y_h.dat
+
+
+
+#  k
+# ---
+#./CombineGalaxies ../MakeNewDisk/vc/vc0x2.dat -109 -30 ../MakeNewDisk/vc/vc0x2.dat 71 -30 5.0 100.0 /raid4/tcox/ICs/vc/vc0vc0x2_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1x2.dat -109 -30 ../MakeNewDisk/vc/vc1x2.dat 71 -30 5.0 100.0 /raid4/tcox/ICs/vc/vc1vc1x2_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2x2.dat -109 -30 ../MakeNewDisk/vc/vc2x2.dat 71 -30 5.0 100.0 /raid4/tcox/ICs/vc/vc2vc2x2_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4x2.dat -109 -30 ../MakeNewDisk/vc/vc4x2.dat 71 -30 5.0 100.0 /raid4/tcox/ICs/vc/vc4vc4x2_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5x2.dat -109 -30 ../MakeNewDisk/vc/vc5x2.dat 71 -30 5.0 100.0 /raid4/tcox/ICs/vc/vc5vc5x2_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6x2.dat -109 -30 ../MakeNewDisk/vc/vc6x2.dat 71 -30 5.0 100.0 /raid4/tcox/ICs/vc/vc6vc6x2_k.dat
+# ---
+#./CombineGalaxies ../MakeNewDisk/vc/vc0x2.dat -109 -30 ../MakeNewDisk/vc/vc0x2.dat 71 -30  2.0  50.0 /raid4/tcox/ICs/vc/vc0vc0x2_k2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1x2.dat -109 -30 ../MakeNewDisk/vc/vc1x2.dat 71 -30  3.0  80.0 /raid4/tcox/ICs/vc/vc1vc1x2_k2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2x2.dat -109 -30 ../MakeNewDisk/vc/vc2x2.dat 71 -30  4.0 110.0 /raid4/tcox/ICs/vc/vc2vc2x2_k2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4x2.dat -109 -30 ../MakeNewDisk/vc/vc4x2.dat 71 -30  8.0 150.0 /raid4/tcox/ICs/vc/vc4vc4x2_k2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5x2.dat -109 -30 ../MakeNewDisk/vc/vc5x2.dat 71 -30 10.0 250.0 /raid4/tcox/ICs/vc/vc5vc5x2_k2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6x2.dat -109 -30 ../MakeNewDisk/vc/vc6x2.dat 71 -30 15.0 350.0 /raid4/tcox/ICs/vc/vc6vc6x2_k2.dat
+
+#./CombineGalaxies ../MakeNewDisk/vc/vc0z.dat -109 -30 ../MakeNewDisk/vc/vc0z.dat 71 -30 2.0 50.0 /raid4/tcox/ICs/vc/vc0vc0z_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1z.dat -109 -30 ../MakeNewDisk/vc/vc1z.dat 71 -30 3.0 80.0 /raid4/tcox/ICs/vc/vc1vc1z_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2z.dat -109 -30 ../MakeNewDisk/vc/vc2z.dat 71 -30 4.0 110.0 /raid4/tcox/ICs/vc/vc2vc2z_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4z.dat -109 -30 ../MakeNewDisk/vc/vc4z.dat 71 -30 8.0 150.0 /raid4/tcox/ICs/vc/vc4vc4z_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5z.dat -109 -30 ../MakeNewDisk/vc/vc5z.dat 71 -30 10.0 250.0 /raid4/tcox/ICs/vc/vc5vc5z_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6z.dat -109 -30 ../MakeNewDisk/vc/vc6z.dat 71 -30 15.0 350.0 /raid4/tcox/ICs/vc/vc6vc6z_k.dat
+
+#./CombineGalaxies ../MakeNewDisk/vc/vc0v.dat -109 -30 ../MakeNewDisk/vc/vc0v.dat 71 -30  2.0  50.0 /raid4/tcox/ICs/vc/vc0vc0v_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1v.dat -109 -30 ../MakeNewDisk/vc/vc1v.dat 71 -30  3.0  80.0 /raid4/tcox/ICs/vc/vc1vc1v_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2v.dat -109 -30 ../MakeNewDisk/vc/vc2v.dat 71 -30  4.0 110.0 /raid4/tcox/ICs/vc/vc2vc2v_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4v.dat -109 -30 ../MakeNewDisk/vc/vc4v.dat 71 -30  8.0 150.0 /raid4/tcox/ICs/vc/vc4vc4v_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5v.dat -109 -30 ../MakeNewDisk/vc/vc5v.dat 71 -30 10.0 250.0 /raid4/tcox/ICs/vc/vc5vc5v_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6v.dat -109 -30 ../MakeNewDisk/vc/vc6v.dat 71 -30 15.0 350.0 /raid4/tcox/ICs/vc/vc6vc6v_k.dat
+
+#./CombineGalaxies ../MakeNewDisk/vc/vc0y.dat -109 -30 ../MakeNewDisk/vc/vc0y.dat 71 -30  2.0  50.0 /raid4/tcox/ICs/vc/vc0vc0y_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1y.dat -109 -30 ../MakeNewDisk/vc/vc1y.dat 71 -30  3.0  80.0 /raid4/tcox/ICs/vc/vc1vc1y_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2y.dat -109 -30 ../MakeNewDisk/vc/vc2y.dat 71 -30  4.0 110.0 /raid4/tcox/ICs/vc/vc2vc2y_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc3y.dat -109 -30 ../MakeNewDisk/vc/vc3y.dat 71 -30  4.0 110.0 /raid4/tcox/ICs/vc/vc3vc3y_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4y.dat -109 -30 ../MakeNewDisk/vc/vc4y.dat 71 -30  8.0 150.0 /raid4/tcox/ICs/vc/vc4vc4y_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5y.dat -109 -30 ../MakeNewDisk/vc/vc5y.dat 71 -30 10.0 250.0 /raid4/tcox/ICs/vc/vc5vc5y_k.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6y.dat -109 -30 ../MakeNewDisk/vc/vc6y.dat 71 -30 15.0 350.0 /raid4/tcox/ICs/vc/vc6vc6y_k.dat
+
+
+
+
+#  f
+# ---
+#./CombineGalaxies ../MakeNewDisk/vc/vc0x2.dat 60 60 ../MakeNewDisk/vc/vc0x2.dat 150 0 5.0 100.0 /raid4/tcox/ICs/vc/vc0vc0x2_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1x2.dat 60 60 ../MakeNewDisk/vc/vc1x2.dat 150 0 5.0 100.0 /raid4/tcox/ICs/vc/vc1vc1x2_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2x2.dat 60 60 ../MakeNewDisk/vc/vc2x2.dat 150 0 5.0 100.0 /raid4/tcox/ICs/vc/vc2vc2x2_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4x2.dat 60 60 ../MakeNewDisk/vc/vc4x2.dat 150 0 5.0 100.0 /raid4/tcox/ICs/vc/vc4vc4x2_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5x2.dat 60 60 ../MakeNewDisk/vc/vc5x2.dat 150 0 5.0 100.0 /raid4/tcox/ICs/vc/vc5vc5x2_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6x2.dat 60 60 ../MakeNewDisk/vc/vc6x2.dat 150 0 5.0 100.0 /raid4/tcox/ICs/vc/vc6vc6x2_f.dat
+# ---
+#./CombineGalaxies ../MakeNewDisk/vc/vc0x2.dat 60 60 ../MakeNewDisk/vc/vc0x2.dat 150 0  2.0  50.0 /raid4/tcox/ICs/vc/vc0vc0x2_f2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1x2.dat 60 60 ../MakeNewDisk/vc/vc1x2.dat 150 0  3.0  80.0 /raid4/tcox/ICs/vc/vc1vc1x2_f2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2x2.dat 60 60 ../MakeNewDisk/vc/vc2x2.dat 150 0  4.0 110.0 /raid4/tcox/ICs/vc/vc2vc2x2_f2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4x2.dat 60 60 ../MakeNewDisk/vc/vc4x2.dat 150 0  8.0 150.0 /raid4/tcox/ICs/vc/vc4vc4x2_f2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5x2.dat 60 60 ../MakeNewDisk/vc/vc5x2.dat 150 0 10.0 250.0 /raid4/tcox/ICs/vc/vc5vc5x2_f2.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6x2.dat 60 60 ../MakeNewDisk/vc/vc6x2.dat 150 0 15.0 350.0 /raid4/tcox/ICs/vc/vc6vc6x2_f2.dat
+
+#./CombineGalaxies ../MakeNewDisk/vc/vc0z.dat 60 60 ../MakeNewDisk/vc/vc0z.dat 150 0 2.0 50.0 /raid4/tcox/ICs/vc/vc0vc0z_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1z.dat 60 60 ../MakeNewDisk/vc/vc1z.dat 150 0 3.0 80.0 /raid4/tcox/ICs/vc/vc1vc1z_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2z.dat 60 60 ../MakeNewDisk/vc/vc2z.dat 150 0 4.0 110.0 /raid4/tcox/ICs/vc/vc2vc2z_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4z.dat 60 60 ../MakeNewDisk/vc/vc4z.dat 150 0 8.0 150.0 /raid4/tcox/ICs/vc/vc4vc4z_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5z.dat 60 60 ../MakeNewDisk/vc/vc5z.dat 150 0 10.0 250.0 /raid4/tcox/ICs/vc/vc5vc5z_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6z.dat 60 60 ../MakeNewDisk/vc/vc6z.dat 150 0 15.0 350.0 /raid4/tcox/ICs/vc/vc6vc6z_f.dat
+
+#./CombineGalaxies ../MakeNewDisk/vc/vc0v.dat 60 60 ../MakeNewDisk/vc/vc0v.dat 150 0  2.0  50.0 /raid4/tcox/ICs/vc/vc0vc0v_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1v.dat 60 60 ../MakeNewDisk/vc/vc1v.dat 150 0  3.0  80.0 /raid4/tcox/ICs/vc/vc1vc1v_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2v.dat 60 60 ../MakeNewDisk/vc/vc2v.dat 150 0  4.0 110.0 /raid4/tcox/ICs/vc/vc2vc2v_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4v.dat 60 60 ../MakeNewDisk/vc/vc4v.dat 150 0  8.0 150.0 /raid4/tcox/ICs/vc/vc4vc4v_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5v.dat 60 60 ../MakeNewDisk/vc/vc5v.dat 150 0 10.0 250.0 /raid4/tcox/ICs/vc/vc5vc5v_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6v.dat 60 60 ../MakeNewDisk/vc/vc6v.dat 150 0 15.0 350.0 /raid4/tcox/ICs/vc/vc6vc6v_f.dat
+
+#./CombineGalaxies ../MakeNewDisk/vc/vc0y.dat 60 60 ../MakeNewDisk/vc/vc0y.dat 150 0  2.0  50.0 /raid4/tcox/ICs/vc/vc0vc0y_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc1y.dat 60 60 ../MakeNewDisk/vc/vc1y.dat 150 0  3.0  80.0 /raid4/tcox/ICs/vc/vc1vc1y_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc2y.dat 60 60 ../MakeNewDisk/vc/vc2y.dat 150 0  4.0 110.0 /raid4/tcox/ICs/vc/vc2vc2y_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc3y.dat 60 60 ../MakeNewDisk/vc/vc3y.dat 150 0  4.0 110.0 /raid4/tcox/ICs/vc/vc3vc3y_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc4y.dat 60 60 ../MakeNewDisk/vc/vc4y.dat 150 0  8.0 150.0 /raid4/tcox/ICs/vc/vc4vc4y_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc5y.dat 60 60 ../MakeNewDisk/vc/vc5y.dat 150 0 10.0 250.0 /raid4/tcox/ICs/vc/vc5vc5y_f.dat
+#./CombineGalaxies ../MakeNewDisk/vc/vc6y.dat 60 60 ../MakeNewDisk/vc/vc6y.dat 150 0 15.0 350.0 /raid4/tcox/ICs/vc/vc6vc6y_f.dat
+
+
+
+
+
+

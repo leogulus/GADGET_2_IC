@@ -1,0 +1,222 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+#include "nrsrc/nr.h"
+#include "nrsrc/nrutil.h"
+
+#include "prototypes.h"
+#include "globvars.h"
+
+
+static double R,z;
+
+
+
+double set_gas_velocities(void)
+{
+  long   i;
+  double q,R,phi,theta;
+  long  dum;
+  int   iz,ir;
+  double ur,uz;
+  double vdisp_rz,vdisp_phi,vstream_phi;
+  double vr,vphi;
+  double vx,vy,vz;
+
+
+
+  if(N_GAS==0) return;
+
+  dum=drand48()*1e8;
+
+  printf("set gas velocities..."); fflush(stdout);  
+  
+  for(i=1;i<=N_GAS;i++)
+    {
+      if(i % 1000 == 0)
+          printf("i/N_GAS = %ld/%ld\n",i, N_GAS);
+
+      R=sqrt(xp_gas[i]*xp_gas[i] + yp_gas[i]*yp_gas[i]);
+      z=zp_gas[i];
+
+
+      ir=(int)( log(R/LL*(pow(FR,RSIZE)-1)+1)/log(FR));
+      ur=( log(R/LL*(pow(FR,RSIZE)-1)+1)/log(FR)) - ir;
+
+      iz=(int)( log(fabs(z)/LL*(pow(FZ,ZSIZE)-1)+1)/log(FZ));
+      uz=( log(fabs(z)/LL*(pow(FZ,ZSIZE)-1)+1)/log(FZ)) - iz;
+
+
+   
+      /* --------------------------------------------
+	    Set Gas Temperature
+	 -------------------------------------------- */
+      vdisp_rz= VelDispRz_gas[ir][iz]*(1-ur)*(1-uz)
+               +VelDispRz_gas[ir+1][iz]*(ur)*(1-uz)
+   	       +VelDispRz_gas[ir][iz+1]*(1-ur)*(uz) 
+               +VelDispRz_gas[ir+1][iz+1]*(ur)*(uz);
+
+
+      u_gas[i]=vdisp_rz/(GAMMA-1);
+      /* if(iz>=37) printf("\n%d has iz=37, is this a correlation?",i);  */
+      /* if(vdisp_rz==0) printf("\n%d has vdisp_rz = 0",i);  */
+
+      if(u_gas[i]<=150.0)
+        {
+           /* printf("\n%d has E=0, %g %g %g %d %d ",i,vdisp_rz,ur,uz,ir,iz); fflush(stdout);  */
+	   u_gas[i]= 150.0;
+        }
+
+      /* -------------------------------------------- */
+
+
+      vstream_phi=VelStreamPhi_gas[ir][iz]*(1-ur)*(1-uz)
+	       +VelStreamPhi_gas[ir+1][iz]*(ur)*(1-uz)
+	       +VelStreamPhi_gas[ir][iz+1]*(1-ur)*(uz) 
+	       +VelStreamPhi_gas[ir+1][iz+1]*(ur)*(uz);
+
+
+      vr=0;
+      vz=0;
+
+      vphi=vstream_phi;
+
+      vx=vr*xp_gas[i]/R - vphi*yp_gas[i]/R;
+      vy=vr*yp_gas[i]/R + vphi*xp_gas[i]/R;
+
+      vxp_gas[i]=vx;
+      vyp_gas[i]=vy;
+      vzp_gas[i]=vz;
+
+      
+//      if((vx*vx+vy*vy+vz*vz)>0.95*vmax2_gas[i])
+//	{
+//	  printf("%d Gas velocity rejected\n",i); 
+//	  i--;
+//	}
+
+    }
+
+  printf("done.\n"); fflush(stdout);
+}
+
+
+
+
+
+double set_gas_positions(void)
+{
+  int   i,countr,countz;
+  double q,R,f,f_,Rold,phi,theta;
+  double pw;
+  double Rd;
+
+  int n_disk,n_HI;
+
+  if(N_GAS==0) return;
+
+  srand48(GRAND);
+  
+  if(HI_GasMassFraction>0)
+    {
+      n_disk= (1-HI_GasMassFraction)*N_GAS;
+      n_HI= N_GAS - n_disk;
+    }
+  else
+    {
+      n_disk= N_GAS;
+      n_HI= 0;
+    }
+
+  switch(GasDistribution) {
+        case 0:
+          Rd= H;
+          break;
+        case 1:
+          Rd= H*GasExpAlpha;
+          break;
+        case 2:
+          break;
+  }
+
+
+printf("Gas Rd= %g\n",Rd);
+
+  for(i=1,countr=countz=0;i<=n_disk;)
+    {
+      q=drand48();
+
+      zp_gas[i]=Z0/2*log(q/(1-q));
+
+      q=drand48();
+      
+      switch(GasDistribution) {
+	  case 0:   /* Exponential Distribution */
+	  case 1:
+      		R=1.0;
+      		do
+		  {
+	  	    f=(1+R)*exp(-R)+q-1;
+	  	    f_=-R*exp(-R);
+	  
+	  	    Rold=R;
+	  	    R=R-f/f_;
+		  }
+      		while(fabs(R-Rold)/R> 1e-6);
+
+      		R*=Rd;
+		break;
+	  case 2:  /* Power-law distribution - gamma=1 is Mestel, or 1/R distribution */
+		pw= 1/(2-PowerLawGamma);
+		R=pow(q,pw);
+		R*=(H*PowerLawCutOff);	            /* nomalized by Rt = PowerLawCutOff * DiskScaleLength */
+		break;
+	}
+      
+      phi=drand48()*PI*2;
+	  
+      xp_gas[i]=R*cos(phi);
+      yp_gas[i]=R*sin(phi);
+      
+
+      if(R>LL || fabs(zp_gas[i])>LL || R>60.0)
+	{
+	printf("ditch i=%d   R= %g  LL= %g\n",i,R,LL); fflush(stdout);
+	countr++;
+	}
+      else 
+	i++;
+    }
+
+
+
+  for(i=1+n_disk;i<=N_GAS;)
+    {
+      q=drand48();
+
+      zp_gas[i]=Z0/2*log(q/(1-q));
+
+      q=drand48();
+      
+      R= H * sqrt(q) * HI_GasDiskScaleLength;
+      
+      phi=drand48()*PI*2;
+	  
+      xp_gas[i]=R*cos(phi);
+      yp_gas[i]=R*sin(phi);
+      
+
+      if(R>LL || fabs(zp_gas[i])>LL)
+	countr++;
+      else 
+	i++;
+    }
+
+
+  for(i=1;i<=N_GAS;i++)
+    mp_gas[i]=M_GAS/N_GAS;
+}
+
+
+
+

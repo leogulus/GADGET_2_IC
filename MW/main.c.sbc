@@ -1,0 +1,168 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+#include "nrsrc/nr.h"
+#include "nrsrc/nrutil.h"
+
+#include "prototypes.h"
+#include "globvars.h"
+
+
+
+int main(int argc,char *argv[])
+{
+  int i;
+  char filename[100];
+  FILE *fd;
+
+  int write_header(FILE *fd);
+
+
+  /*******************************************/
+
+  CC=     11.0;         /* halo concentration      */
+  Mvir=   15.0;         /* virial mass (in 10^10 Msolar) */
+  LAMBDA= 0.050;        /* spin parameter          */
+
+  M_DISK= 0.392;    /* total disk mass in units of 10^10 Msolar */
+  M_GAS= 0.537;     /* total disk mass in units of 10^10 Msolar */
+  M_BULGE= 0.100;   /* total disk mass in units of 10^10 Msolar */
+
+  DARKMASS_IN_ROPT= 0.995;   /* dark mass inside optical radius (3.2 * H)  */
+
+  H=      2.55;          /* manually set radial disk scale length, this decouples
+                           the angular momentum of the disk and the halo and hence
+                           the spin doesn't set the size of H and Jd is not
+                           fixed.   */
+  DiskHeight=  0.125;    /* thickness of disk in units of radial scale length */
+
+  N_HALO= 1000000;        /* desired number of particles in dark halo */
+  N_DISK=  300000;        /* desired number of collisionless particles in disk */
+  N_GAS=   300000;        /* number of gas particles in disk */ 
+  N_BULGE= 100000;           /* number of bulge particles */ 
+
+  HUBBLE = 0.70;	/* Hubble parameter (1 means units of h-1)*/
+
+  Z = 0;		/* Redshift of Galaxy */
+
+  GasDistribution = 1;		/* 0 = exp. (normal, same Rd as disk)
+				   			   1 = exp. (with Rd -> Rd*Alpha)
+				   			   2 = Power Law (with PowerLawGamma < 2) */
+  GasExpAlpha = 3.0;            /* gas is exp. with Rd*Alpha scale length */
+  PowerLawGamma  = 1;           /* power-law index, sigma ~ r^-gamma   (gamma=1 is mestel) - must be < 2 */
+  PowerLawCutOff = 20;		/* in units of Rd, when gas disk is terminated */
+
+  BulgeSize=   0.45;    		/* bulge scale length in units of disk scale length  */
+  BulgeDistribution = 1;        /* 0 = Hernquist profile (BulgeSize sets a)
+                                   1 = Spherical exp. (BulgeSize sets 3D Rd) */
+
+  HI_GasMassFraction=    0.0;      /* in terms of the total gas mass */
+  HI_GasDiskScaleLength= 3.72;     /* in terms of scale length of the disk */ 
+
+  Qstabilizefactor=1.0;
+
+
+  /**********************************************************/
+
+  MD= (M_DISK+M_GAS)/Mvir;
+  MB= M_BULGE/Mvir;
+  GasFraction= M_GAS/(M_DISK+M_GAS);
+
+
+  /**********************************************************/
+
+
+  if(argc!=2)
+    {
+      fprintf(stderr,"\n\nwrong argument(s).  Specify an output filename.\n\n");
+      exit(0);
+    }
+  strcpy(filename, argv[1]);
+
+
+  init_units();        /* set system of units */
+  structure();         /* determine structure of halo, disk, and bulge */
+  init();              /* allocate arrays */
+
+
+  set_halo_positions();
+  set_disk_positions();
+  set_bulge_positions();
+  set_gas_positions();
+  
+  compute_force_field();
+
+  compute_velocity_dispersions_disk();
+  compute_velocity_dispersions_halo();  
+  compute_velocity_dispersions_bulge();  
+  compute_velocity_dispersions_gas();
+ 
+  compute_local_escape_speed();
+
+  set_halo_velocities();
+  set_disk_velocities();    
+  set_gas_velocities();
+  set_bulge_velocities();
+
+
+  
+  save_particles(filename);
+
+
+  strcat(filename, ".parameters");
+  if(fd=fopen(filename,"w"))
+    {
+      printf("writing circular velocity curve + Toomre's Q\n");
+      write_header(fd);
+      plot_circular_speeds(fd);
+      plot_toomre_stability(fd);
+      fclose(fd);
+    }
+  else
+    {
+      fprintf(stderr,"Can't open file '%s'.\n",filename);
+      exit(0);
+    }
+  printf("done.\n");
+
+
+  printf("Disk scale length: %g\n",H);
+  printf("Rvir: %g\n",Rvir);
+}
+
+
+
+int write_header(FILE *fd)
+{
+  fprintf(fd,"GAL1    \n");
+  fprintf(fd,"c       \t%g\n",CC);
+  fprintf(fd,"mvir    \t%g\n",Mvir);
+  fprintf(fd,"lambda  \t%g\n",LAMBDA);
+  fprintf(fd,"md      \t%g\n",MD);
+  fprintf(fd,"mb      \t%g\n",MB);
+  fprintf(fd,"jd      \t%g\n",JD);
+  fprintf(fd,"f       \t%g\n",GasFraction);
+  fprintf(fd,"z0      \t%g\n",DiskHeight);
+  fprintf(fd,"a       \t%g\n",BulgeSize);
+  fprintf(fd,"n_halo  \t%d\n",N_HALO);
+  fprintf(fd,"n_disk  \t%d\n",N_DISK);
+  fprintf(fd,"n_gas   \t%d\n",N_GAS);
+  fprintf(fd,"n_bulge \t%d\n",N_BULGE);
+  fprintf(fd,"h       \t%g\n",HUBBLE);
+  fprintf(fd,"z       \t%g\n",Z);
+  fprintf(fd,"GasDist \t%d\n",GasDistribution);
+  fprintf(fd,"GasExpA \t%g\n",GasExpAlpha);
+  fprintf(fd,"PLGamma \t%g\n",PowerLawGamma);
+  fprintf(fd,"PLCutO  \t%g\n",PowerLawCutOff);
+  fprintf(fd,"BDist   \t%g\n",BulgeDistribution);
+  fprintf(fd,"Rvir    \t%g\n",Rvir);
+  fprintf(fd,"Vvir    \t%g\n",Vvir);
+  fprintf(fd,"Rd      \t%g\n",H);
+  fprintf(fd,"Q       \t%g\n",Qstabilizefactor);
+  fprintf(fd,"HI_gmf  \t%g\n",HI_GasMassFraction);
+  fprintf(fd,"HI_gds  \t%g\n",HI_GasDiskScaleLength);
+  fprintf(fd,"junk\n");
+}
+
+
+

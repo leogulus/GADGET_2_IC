@@ -1,0 +1,836 @@
+G=43007.1  H0= 0.07  UnitTime_in_Megayears=978.028 
+ez = 1
+Omega_z = 0.3
+Delta_vir = 337.143
+H= 0.7 
+
+Rvir = 70.2786
+Vvir = 34.9843
+Mvir = 2     (c= 15)
+
+Mdisk  = 0.013
+Mgas   = 0.075
+Mbulge = 0.001
+
+Dark Mass inside Ropt= -5.0023e-12   (DM_IN_ROPT=-0.05)
+
+MD     = 0.044
+MB     = 0.0005
+rho_s = 0.000843273
+r_s = 4.68524
+E = -1770.46
+J_halo = 190.803
+
+
+Total mass will be: 2
+j_disk1= 0.622696
+j_disk= 0.622696
+j_gas=  10.4365
+j_bulge=0
+JD=Jdisk/Jhalo= 0.0579615 
+
+Gas Rd= 2.1
+Start computing force field.
+force field 1(50)
+force field 2(50)
+force field 3(50)
+force field 4(50)
+force field 5(50)
+force field 6(50)
+force field 7(50)
+force field 8(50)
+force field 9(50)
+force field 10(50)
+force field 11(50)
+force field 12(50)
+force field 13(50)
+force field 14(50)
+force field 15(50)
+force field 16(50)
+force field 17(50)
+force field 18(50)
+force field 19(50)
+force field 20(50)
+force field 21(50)
+force field 22(50)
+force field 23(50)
+force field 24(50)
+force field 25(50)
+force field 26(50)
+force field 27(50)
+force field 28(50)
+force field 29(50)
+force field 30(50)
+force field 31(50)
+force field 32(50)
+force field 33(50)
+force field 34(50)
+force field 35(50)
+force field 36(50)
+force field 37(50)
+force field 38(50)
+force field 39(50)
+force field 40(50)
+force field 41(50)
+force field 42(50)
+force field 43(50)
+force field 44(50)
+force field 45(50)
+force field 46(50)
+force field 47(50)
+force field 48(50)
+force field 49(50)
+force field 50(50)
+Force field finished.
+disk velocity dispersion field...
+disk A, 0
+disk A, 1
+disk A, 2
+disk A, 3
+disk A, 4
+disk A, 5
+disk A, 6
+disk A, 7
+disk A, 8
+disk A, 9
+disk A, 10
+disk A, 11
+disk A, 12
+disk A, 13
+disk A, 14
+disk A, 15
+disk A, 16
+disk A, 17
+disk A, 18
+disk A, 19
+disk A, 20
+disk A, 21
+disk A, 22
+disk A, 23
+disk A, 24
+disk A, 25
+disk A, 26
+disk A, 27
+disk A, 28
+disk A, 29
+disk A, 30
+disk A, 31
+disk A, 32
+disk A, 33
+disk A, 34
+disk A, 35
+disk A, 36
+disk A, 37
+disk A, 38
+disk A, 39
+disk A, 40
+disk A, 41
+disk A, 42
+disk A, 43
+disk A, 44
+disk A, 45
+disk A, 46
+disk A, 47
+disk A, 48
+disk A, 49
+disk A, 50
+disk B, 0
+disk B, 1
+disk B, 2
+disk B, 3
+disk B, 4
+disk B, 5
+disk B, 6
+disk B, 7
+disk B, 8
+disk B, 9
+disk B, 10
+disk B, 11
+disk B, 12
+disk B, 13
+disk B, 14
+disk B, 15
+disk B, 16
+disk B, 17
+disk B, 18
+disk B, 19
+disk B, 20
+disk B, 21
+disk B, 22
+disk B, 23
+disk B, 24
+disk B, 25
+disk B, 26
+disk B, 27
+disk B, 28
+disk B, 29
+disk B, 30
+disk B, 31
+disk B, 32
+disk B, 33
+disk B, 34
+disk B, 35
+disk B, 36
+disk B, 37
+disk B, 38
+disk B, 39
+disk B, 40
+disk B, 41
+disk B, 42
+disk B, 43
+disk B, 44
+disk B, 45
+disk B, 46
+disk B, 47
+disk B, 48
+disk B, 49
+disk B, 50
+done.
+VelDispRz_disk[0][0]=      8307641.3 
+VelDispRz_disk[0][1]=      8307641.3 
+VelDispRz_disk[0][2]=      3639357.4 
+VelDispRz_disk[1][0]=      8307641.3 
+VelDispRz_disk[1][1]=      8307641.3 
+VelDispRz_disk[1][2]=      3639357.4 
+VelDispRz_disk[2][0]=      4100035.9 
+VelDispRz_disk[2][1]=      4100035.9 
+VelDispRz_disk[2][2]=      3117474.4 
+RSIZE= 50   ZSIZE=50
+halo velocity dispersion field...
+halo A, 0
+halo A, 1
+halo A, 2
+halo A, 3
+halo A, 4
+halo A, 5
+halo A, 6
+halo A, 7
+halo A, 8
+halo A, 9
+halo A, 10
+halo A, 11
+halo A, 12
+halo A, 13
+halo A, 14
+halo A, 15
+halo A, 16
+halo A, 17
+halo A, 18
+halo A, 19
+halo A, 20
+halo A, 21
+halo A, 22
+halo A, 23
+halo A, 24
+halo A, 25
+halo A, 26
+halo A, 27
+halo A, 28
+halo A, 29
+halo A, 30
+halo A, 31
+halo A, 32
+halo A, 33
+halo A, 34
+halo A, 35
+halo A, 36
+halo A, 37
+halo A, 38
+halo A, 39
+halo A, 40
+halo A, 41
+halo A, 42
+halo A, 43
+halo A, 44
+halo A, 45
+halo A, 46
+halo A, 47
+halo A, 48
+halo A, 49
+halo A, 50
+halo B, 0
+halo B, 1
+halo B, 2
+halo B, 3
+halo B, 4
+halo B, 5
+halo B, 6
+halo B, 7
+halo B, 8
+halo B, 9
+halo B, 10
+halo B, 11
+halo B, 12
+halo B, 13
+halo B, 14
+halo B, 15
+halo B, 16
+halo B, 17
+halo B, 18
+halo B, 19
+halo B, 20
+halo B, 21
+halo B, 22
+halo B, 23
+halo B, 24
+halo B, 25
+halo B, 26
+halo B, 27
+halo B, 28
+halo B, 29
+halo B, 30
+halo B, 31
+halo B, 32
+halo B, 33
+halo B, 34
+halo B, 35
+halo B, 36
+halo B, 37
+halo B, 38
+halo B, 39
+halo B, 40
+halo B, 41
+halo B, 42
+halo B, 43
+halo B, 44
+halo B, 45
+halo B, 46
+halo B, 47
+halo B, 48
+halo B, 49
+halo B, 50
+done.
+bulge velocity dispersion field...
+bulge A, 0
+bulge A, 1
+bulge A, 2
+bulge A, 3
+bulge A, 4
+bulge A, 5
+bulge A, 6
+bulge A, 7
+bulge A, 8
+bulge A, 9
+bulge A, 10
+bulge A, 11
+bulge A, 12
+bulge A, 13
+bulge A, 14
+bulge A, 15
+bulge A, 16
+bulge A, 17
+bulge A, 18
+bulge A, 19
+bulge A, 20
+bulge A, 21
+bulge A, 22
+bulge A, 23
+bulge A, 24
+bulge A, 25
+bulge A, 26
+bulge A, 27
+bulge A, 28
+bulge A, 29
+bulge A, 30
+bulge A, 31
+bulge A, 32
+bulge A, 33
+bulge A, 34
+bulge A, 35
+bulge A, 36
+bulge A, 37
+bulge A, 38
+bulge A, 39
+bulge A, 40
+bulge A, 41
+bulge A, 42
+bulge A, 43
+bulge A, 44
+bulge A, 45
+bulge A, 46
+bulge A, 47
+bulge A, 48
+bulge A, 49
+bulge A, 50
+bulge B, 0
+bulge B, 1
+bulge B, 2
+bulge B, 3
+bulge B, 4
+bulge B, 5
+bulge B, 6
+bulge B, 7
+bulge B, 8
+bulge B, 9
+bulge B, 10
+bulge B, 11
+bulge B, 12
+bulge B, 13
+bulge B, 14
+bulge B, 15
+bulge B, 16
+bulge B, 17
+bulge B, 18
+bulge B, 19
+bulge B, 20
+bulge B, 21
+bulge B, 22
+bulge B, 23
+bulge B, 24
+bulge B, 25
+bulge B, 26
+bulge B, 27
+bulge B, 28
+bulge B, 29
+bulge B, 30
+bulge B, 31
+bulge B, 32
+bulge B, 33
+bulge B, 34
+bulge B, 35
+bulge B, 36
+bulge B, 37
+bulge B, 38
+bulge B, 39
+bulge B, 40
+bulge B, 41
+bulge B, 42
+bulge B, 43
+bulge B, 44
+bulge B, 45
+bulge B, 46
+bulge B, 47
+bulge B, 48
+bulge B, 49
+bulge B, 50
+done.
+gas velocity dispersion field...
+gas A, 0
+gas A, 1
+gas A, 2
+gas A, 3
+gas A, 4
+gas A, 5
+gas A, 6
+gas A, 7
+gas A, 8
+gas A, 9
+gas A, 10
+gas A, 11
+gas A, 12
+gas A, 13
+gas A, 14
+gas A, 15
+gas A, 16
+gas A, 17
+gas A, 18
+gas A, 19
+gas A, 20
+gas A, 21
+gas A, 22
+gas A, 23
+gas A, 24
+gas A, 25
+gas A, 26
+gas A, 27
+gas A, 28
+gas A, 29
+gas A, 30
+gas A, 31
+gas A, 32
+gas A, 33
+gas A, 34
+gas A, 35
+gas A, 36
+gas A, 37
+gas A, 38
+gas A, 39
+gas A, 40
+gas A, 41
+gas A, 42
+gas A, 43
+gas A, 44
+gas A, 45
+gas A, 46
+gas A, 47
+gas A, 48
+gas A, 49
+gas A, 50
+gas B, 0
+gas B, 1
+gas B, 2
+gas B, 3
+gas B, 4
+gas B, 5
+gas B, 6
+gas B, 7
+gas B, 8
+gas B, 9
+gas B, 10
+gas B, 11
+gas B, 12
+gas B, 13
+gas B, 14
+gas B, 15
+gas B, 16
+gas B, 17
+gas B, 18
+gas B, 19
+gas B, 20
+gas B, 21
+gas B, 22
+gas B, 23
+gas B, 24
+gas B, 25
+gas B, 26
+gas B, 27
+gas B, 28
+gas B, 29
+gas B, 30
+gas B, 31
+gas B, 32
+gas B, 33
+gas B, 34
+gas B, 35
+gas B, 36
+gas B, 37
+gas B, 38
+gas B, 39
+gas B, 40
+gas B, 41
+gas B, 42
+gas B, 43
+gas B, 44
+gas B, 45
+gas B, 46
+gas B, 47
+gas B, 48
+gas B, 49
+gas B, 50
+done.
+VelDispRz_disk[0][0]=      8307641.3 
+VelDispRz_disk[0][1]=      8307641.3 
+VelDispRz_disk[0][2]=      3639357.4 
+VelDispRz_disk[1][0]=      8307641.3 
+VelDispRz_disk[1][1]=      8307641.3 
+VelDispRz_disk[1][2]=      3639357.4 
+VelDispRz_disk[2][0]=      4100035.9 
+VelDispRz_disk[2][1]=      4100035.9 
+VelDispRz_disk[2][2]=      3117474.4 
+RSIZE= 50   ZSIZE=50
+Start computing local escape speed...  allocating memory...
+allocating memory...done
+check 0 N=1333001 
+check 1 
+
+Allocated 589.859 MByte for BH-tree.
+
+check 2 2*N=2666002 
+positions input 
+ntypes= 300000 1000000 30000 3000 0 1
+tr = 0
+check 1n 
+check 2n 
+check 3+4 i=1040000 
+check 3+4 i=1050000 
+check 3+4 i=1060000 
+check 3+4 i=1070000 
+check 3+4 i=1080000 
+check 3+4 i=1090000 
+check 3+4 i=1100000 
+check 3+4 i=1110000 
+check 3+4 i=1120000 
+check 3+4 i=1130000 
+check 3+4 i=1140000 
+check 3+4 i=1150000 
+check 3+4 i=1160000 
+check 3+4 i=1170000 
+check 3+4 i=1180000 
+check 3+4 i=1190000 
+check 3+4 i=1200000 
+check 3+4 i=1210000 
+check 3+4 i=1220000 
+check 3+4 i=1230000 
+check 3+4 i=1240000 
+check 3+4 i=1250000 
+check 3+4 i=1260000 
+check 3+4 i=1270000 
+check 3+4 i=1280000 
+check 3+4 i=1290000 
+check 3+4 i=1300000 
+check 3+4 i=1310000 
+check 3+4 i=1320000 
+check 3+4 i=1330000 
+check 5 
+check 6 
+check 7 
+Tree contruction finished. Number of nodes: 449128
+tr = 1
+check 1n 
+check 2n 
+check 3+4 i=10000 
+check 3+4 i=20000 
+check 3+4 i=30000 
+check 3+4 i=40000 
+check 3+4 i=50000 
+check 3+4 i=60000 
+check 3+4 i=70000 
+check 3+4 i=80000 
+check 3+4 i=90000 
+check 3+4 i=100000 
+check 3+4 i=110000 
+check 3+4 i=120000 
+check 3+4 i=130000 
+check 3+4 i=140000 
+check 3+4 i=150000 
+check 3+4 i=160000 
+check 3+4 i=170000 
+check 3+4 i=180000 
+check 3+4 i=190000 
+check 3+4 i=200000 
+check 3+4 i=210000 
+check 3+4 i=220000 
+check 3+4 i=230000 
+check 3+4 i=240000 
+check 3+4 i=250000 
+check 3+4 i=260000 
+check 3+4 i=270000 
+check 3+4 i=280000 
+check 3+4 i=290000 
+check 3+4 i=300000 
+check 3+4 i=310000 
+check 3+4 i=320000 
+check 3+4 i=330000 
+check 3+4 i=340000 
+check 3+4 i=350000 
+check 3+4 i=360000 
+check 3+4 i=370000 
+check 3+4 i=380000 
+check 3+4 i=390000 
+check 3+4 i=400000 
+check 3+4 i=410000 
+check 3+4 i=420000 
+check 3+4 i=430000 
+check 3+4 i=440000 
+check 3+4 i=450000 
+check 3+4 i=460000 
+check 3+4 i=470000 
+check 3+4 i=480000 
+check 3+4 i=490000 
+check 3+4 i=500000 
+check 3+4 i=510000 
+check 3+4 i=520000 
+check 3+4 i=530000 
+check 3+4 i=540000 
+check 3+4 i=550000 
+check 3+4 i=560000 
+check 3+4 i=570000 
+check 3+4 i=580000 
+check 3+4 i=590000 
+check 3+4 i=600000 
+check 3+4 i=610000 
+check 3+4 i=620000 
+check 3+4 i=630000 
+check 3+4 i=640000 
+check 3+4 i=650000 
+check 3+4 i=660000 
+check 3+4 i=670000 
+check 3+4 i=680000 
+check 3+4 i=690000 
+check 3+4 i=700000 
+check 3+4 i=710000 
+check 3+4 i=720000 
+check 3+4 i=730000 
+check 3+4 i=740000 
+check 3+4 i=750000 
+check 3+4 i=760000 
+check 3+4 i=770000 
+check 3+4 i=780000 
+check 3+4 i=790000 
+check 3+4 i=800000 
+check 3+4 i=810000 
+check 3+4 i=820000 
+check 3+4 i=830000 
+check 3+4 i=840000 
+check 3+4 i=850000 
+check 3+4 i=860000 
+check 3+4 i=870000 
+check 3+4 i=880000 
+check 3+4 i=890000 
+check 3+4 i=900000 
+check 3+4 i=910000 
+check 3+4 i=920000 
+check 3+4 i=930000 
+check 3+4 i=940000 
+check 3+4 i=950000 
+check 3+4 i=960000 
+check 3+4 i=970000 
+check 3+4 i=980000 
+check 3+4 i=990000 
+check 5 
+check 6 
+check 7 
+Tree contruction finished. Number of nodes: 1482939
+tr = 2
+check 1n 
+check 2n 
+check 3+4 i=1010000 
+check 3+4 i=1020000 
+check 5 
+check 6 
+check 7 
+Tree contruction finished. Number of nodes: 44822
+tr = 3
+check 1n 
+check 2n 
+check 5 
+check 6 
+check 7 
+Tree contruction finished. Number of nodes: 4476
+tr = 4
+treebuild_forced, N=1333001 
+...10000
+...20000
+...30000
+...40000
+...50000
+...60000
+...70000
+...80000
+...90000
+...100000
+...110000
+...120000
+...130000
+...140000
+...150000
+...160000
+...170000
+...180000
+...190000
+...200000
+...210000
+...220000
+...230000
+...240000
+...250000
+...260000
+...270000
+...280000
+...290000
+...300000
+...310000
+...320000
+...330000
+...340000
+...350000
+...360000
+...370000
+...380000
+...390000
+...400000
+...410000
+...420000
+...430000
+...440000
+...450000
+...460000
+...470000
+...480000
+...490000
+...500000
+...510000
+...520000
+...530000
+...540000
+...550000
+...560000
+...570000
+...580000
+...590000
+...600000
+...610000
+...620000
+...630000
+...640000
+...650000
+...660000
+...670000
+...680000
+...690000
+...700000
+...710000
+...720000
+...730000
+...740000
+...750000
+...760000
+...770000
+...780000
+...790000
+...800000
+...810000
+...820000
+...830000
+...840000
+...850000
+...860000
+...870000
+...880000
+...890000
+...900000
+...910000
+...920000
+...930000
+...940000
+...950000
+...960000
+...970000
+...980000
+...990000
+...1000000
+...1010000
+...1020000
+...1030000
+...1040000
+...1050000
+...1060000
+...1070000
+...1080000
+...1090000
+...1100000
+...1110000
+...1120000
+...1130000
+...1140000
+...1150000
+...1160000
+...1170000
+...1180000
+...1190000
+...1200000
+...1210000
+...1220000
+...1230000
+...1240000
+...1250000
+...1260000
+...1270000
+...1280000
+...1290000
+...1300000
+...1310000
+...1320000
+...1330000
+potentials grabbed 
+done.
+set halo velocities...done.
+set disk velocities...done.
+set gas velocities...done.
+set bulge velocities...done.
+saveing initial conditions to file `smc.dat'
+
+writing circular velocity curve + Toomre's Q
+done.
+Disk scale length: 0.7
+Rvir: 70.2786

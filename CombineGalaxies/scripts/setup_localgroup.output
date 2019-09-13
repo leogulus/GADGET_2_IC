@@ -1,0 +1,255 @@
+ecc= 0.494
+rdotstart = -0.872178
+phidotstart = 0.0840639
+r*phidotstart = 78.1795
+Rstart=930
+rmax=930.059	
+Relative V= 78.1843
+galaxy 1 moved to: ( -561.024 | -6.4117 | 0 )
+galaxy 2 moved to: ( 368.916 | 4.21618 | -0 )
+velocity galaxy 1: ( 1.06514 | -47.1558 | 0 )
+velocity galaxy 2: ( -0.700407 | 31.0085 | -0 )
+
+ecc= 0.494
+rdotstart = -0.8768
+phidotstart = 0.0845095
+r*phidotstart = 78.5938
+Rstart=930
+rmax=930.059	
+Relative V= 78.5987
+galaxy 1 moved to: ( -561.923 | -6.42197 | 0 )
+galaxy 2 moved to: ( 368.017 | 4.20591 | -0 )
+velocity galaxy 1: ( 1.0725 | -47.4817 | 0 )
+velocity galaxy 2: ( -0.702403 | 31.0969 | -0 )
+
+
+# ------------------------------------------------
+
+# lower (and correct) mass versions
+
+# v4
+#
+rstart= 930
+ecc= 0.494
+rdotstart = -0.734314
+phidotstart = 0.0707761
+r*phidotstart = 65.8218
+Rstart=930
+rmax=930.059	
+Relative V= 65.8259
+galaxy 1 moved to: ( -573.852 | -6.5583 | 0 )
+galaxy 2 moved to: ( 356.088 | 4.06957 | -0 )
+velocity galaxy 1: ( 0.917276 | -40.6098 | 0 )
+velocity galaxy 2: ( -0.56919 | 25.1993 | -0 )
+
+# v5
+#
+rstart= 930
+ecc= 0.55
+rdotstart = -35.4074
+phidotstart = 0.0720904
+r*phidotstart = 67.044
+Rstart=930
+rmax=1085	
+Relative V= 75.8194
+galaxy 1 moved to: ( -495.632 | -289.306 | 0 )
+galaxy 2 moved to: ( 307.55 | 179.521 | -0 )
+velocity galaxy 1: ( 39.7261 | -24.7157 | 0 )
+velocity galaxy 2: ( -24.6509 | 15.3366 | -0 )
+
+# v6
+#
+rstart= 930
+ecc= 0.6
+rdotstart = -53.5547
+phidotstart = 0.0772058
+r*phidotstart = 71.8014
+Rstart=930
+rmax=1400	
+Relative V= 89.5743
+galaxy 1 moved to: ( -380.536 | -429.583 | 0 )
+galaxy 2 moved to: ( 236.131 | 266.566 | -0 )
+velocity galaxy 1: ( 55.0797 | -4.64175 | 0 )
+velocity galaxy 2: ( -34.1782 | 2.88031 | -0 )
+
+# v7
+#
+rstart= 850
+ecc= 0.55
+rdotstart = -44.488
+phidotstart = 0.0862946
+r*phidotstart = 73.3504
+Rstart=850
+rmax=1085
+Relative V= 85.7873
+Relative V (post OC)= 85.7873
+galaxy 1 moved to: ( -405.874 | -332.25 | 0 )
+galaxy 2 moved to: ( 251.854 | 206.169 | -0 )
+velocity galaxy 1: ( 49.9144 | -17.6351 | 0 )
+velocity galaxy 2: ( -30.973 | 10.943 | -0 )
+
+
+# v8
+#
+rstart= 850
+ecc= 0.6
+rdotstart = -58.8496
+phidotstart = 0.092418
+r*phidotstart = 78.5553
+Rstart=850
+rmax=1400
+Relative V= 98.154
+Relative V (post OC)= 98.154
+galaxy 1 moved to: ( -298.258 | -431.47 | 0 )
+galaxy 2 moved to: ( 185.076 | 267.736 | -0 )
+velocity galaxy 1: ( 60.5254 | 2.30835 | 0 )
+velocity galaxy 2: ( -37.5573 | -1.43238 | -0 )
+
+
+
+
+# ------------------------------------------------
+
+# high resolution versions for NOVA
+
+
+
+
+
+rstart= 930
+ecc= 0.494
+rdotstart = -0.734278
+phidotstart = 0.0707726
+r*phidotstart = 65.8185
+Rstart=930
+rmax=930.059	
+Relative V= 65.8226
+galaxy 1 moved to: ( -573.852 | -6.5583 | 0 )
+galaxy 2 moved to: ( 356.088 | 4.06957 | -0 )
+velocity galaxy 1: ( 0.91723 | -40.6078 | 0 )
+velocity galaxy 2: ( -0.569162 | 25.198 | -0 )
+
+rstart= 800
+ecc= 0.55
+rdotstart = -1.40573
+phidotstart = 0.0836586
+r*phidotstart = 66.9269
+Rstart=800
+rmax=800.144	
+Relative V= 66.9417
+Relative V (post OC)= 66.9417
+galaxy 1 moved to: ( -493.595 | -8.48524 | 0 )
+galaxy 2 moved to: ( 306.287 | 5.26528 | -0 )
+velocity galaxy 1: ( 1.57719 | -41.2786 | 0 )
+velocity galaxy 2: ( -0.978682 | 25.6143 | -0 )
+
+rstart= 800
+ecc= 0.8
+rdotstart = -1.41072
+phidotstart = 0.0557709
+r*phidotstart = 44.6167
+Rstart=800
+rmax=800.1	
+Relative V= 44.639
+Relative V (post OC)= 44.639
+galaxy 1 moved to: ( -493.653 | -3.90276 | 0 )
+galaxy 2 moved to: ( 306.322 | 2.42175 | -0 )
+velocity galaxy 1: ( 1.08817 | -27.5246 | 0 )
+velocity galaxy 2: ( -0.675231 | 17.0796 | -0 )
+
+rstart= 700
+ecc= 0.8
+rdotstart = -0.721058
+phidotstart = 0.0681357
+r*phidotstart = 47.695
+Rstart=700
+rmax=700.02	
+Relative V= 47.7004
+Relative V (post OC)= 47.7004
+galaxy 1 moved to: ( -431.956 | -1.63265 | 0 )
+galaxy 2 moved to: ( 268.039 | 1.0131 | -0 )
+velocity galaxy 1: ( 0.556193 | -29.43 | 0 )
+velocity galaxy 2: ( -0.34513 | 18.2619 | -0 )
+
+rstart= 700
+ecc= 0.5
+rdotstart = -0.901289
+phidotstart = 0.107734
+r*phidotstart = 75.414
+Rstart=700
+rmax=700.05	
+Relative V= 75.4194
+Relative V (post OC)= 75.4194
+galaxy 1 moved to: ( -431.929 | -5.16281 | 0 )
+galaxy 2 moved to: ( 268.021 | 3.20364 | -0 )
+velocity galaxy 1: ( 1.11234 | -46.5269 | 0 )
+velocity galaxy 2: ( -0.690234 | 28.8709 | -0 )
+
+
+
+#-----------------------------------------------
+#
+#  New set, localgals_16-19
+#
+
+
+
+
+
+
+rstart= 650
+ecc= 0.8
+rdotstart = -1.45268
+phidotstart = 0.0761498
+r*phidotstart = 49.4974
+Rstart=650
+rmax=650.07	
+Relative V= 49.5187
+Relative V (post OC)= 49.5187
+galaxy 1 moved to: ( -401.095 | -2.94329 | 0 )
+galaxy 2 moved to: ( 248.888 | 1.82638 | -0 )
+velocity galaxy 1: ( 1.12053 | -30.5367 | 0 )
+velocity galaxy 2: ( -0.695316 | 18.9487 | -0 )
+
+rstart= 650
+ecc= 0.5
+rdotstart = -0.434092
+phidotstart = 0.120398
+r*phidotstart = 78.2586
+Rstart=650
+rmax=650.01	
+Relative V= 78.2598
+Relative V (post OC)= 78.2598
+galaxy 1 moved to: ( -401.099 | -2.22492 | 0 )
+galaxy 2 moved to: ( 248.891 | 1.38061 | -0 )
+velocity galaxy 1: ( 0.535744 | -48.29 | 0 )
+velocity galaxy 2: ( -0.332441 | 29.965 | -0 )
+
+rstart= 600
+ecc= 0.8
+rdotstart = -1.03029
+phidotstart = 0.0858617
+r*phidotstart = 51.517
+Rstart=600
+rmax=600.03	
+Relative V= 51.5273
+Relative V (post OC)= 51.5273
+galaxy 1 moved to: ( -370.246 | -1.85125 | 0 )
+galaxy 2 moved to: ( 229.746 | 1.14874 | -0 )
+velocity galaxy 1: ( 0.794717 | -31.7868 | 0 )
+velocity galaxy 2: ( -0.493139 | 19.7244 | -0 )
+
+rstart= 600
+ecc= 0.5
+rdotstart = -9.97518e-15
+phidotstart = 0.135756
+r*phidotstart = 81.4535
+Rstart=600
+rmax=600	
+Relative V= 81.4535
+Relative V (post OC)= 81.4535
+galaxy 1 moved to: ( -370.251 | -4.53427e-14 | 0 )
+galaxy 2 moved to: ( 229.749 | 2.81361e-14 | -0 )
+velocity galaxy 1: ( 1.23111e-14 | -50.2637 | 0 )
+velocity galaxy 2: ( -7.63929e-15 | 31.1898 | -0 )
+

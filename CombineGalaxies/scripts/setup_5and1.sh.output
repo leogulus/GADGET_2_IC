@@ -1,0 +1,120 @@
+
+Galaxy 1 has Scalefactor = 29.2996
+Galaxy 2 has Scalefactor = 29.2996
+correcting orbit for dark halo potential...
+galaxy 1 moved to: ( -43.2383 | -24.914 | 0 )
+galaxy 2 moved to: ( 43.2383 | 24.914 | -0 )
+velocity galaxy 1: ( 150.295 | 34.2688 | 0 )
+velocity galaxy 2: ( -150.295 | -34.2688 | -0 )
+
+Galaxy 1 has Scalefactor = 29.2996
+Galaxy 2 has Scalefactor = 29.2996
+correcting orbit for dark halo potential...
+galaxy 1 moved to: ( -43.2383 | -24.914 | 0 )
+galaxy 2 moved to: ( 43.2383 | 24.914 | -0 )
+velocity galaxy 1: ( 150.295 | 34.2688 | 0 )
+velocity galaxy 2: ( -150.295 | -34.2688 | -0 )
+
+Galaxy 1 has Scalefactor = 29.2996
+Galaxy 2 has Scalefactor = 29.2996
+correcting orbit for dark halo potential...
+galaxy 1 moved to: ( -43.2383 | -24.914 | 0 )
+galaxy 2 moved to: ( 43.2383 | 24.914 | -0 )
+velocity galaxy 1: ( 150.295 | 34.2688 | 0 )
+velocity galaxy 2: ( -150.295 | -34.2688 | -0 )
+
+
+# ------------------------------------------
+#  this set was with the standard combine
+# galaxies, and the orbits are all parabolic
+
+
+Galaxy 1 has Scalefactor = 29.2996
+Galaxy 2 has Scalefactor = 17.1789
+correcting orbit for dark halo potential...
+galaxy 1 moved to: ( -14.8605 | -7.87665 | 0 )
+galaxy 2 moved to: ( 73.2842 | 38.8435 | -0 )
+velocity galaxy 1: ( 42.1556 | 8.91914 | 0 )
+velocity galaxy 2: ( -207.889 | -43.9845 | -0 )
+
+Galaxy 1 has Scalefactor = 17.1789
+Galaxy 2 has Scalefactor = 34.2656
+correcting orbit for dark halo potential...
+galaxy 1 moved to: ( -64.1135 | -80.2053 | 0 )
+galaxy 2 moved to: ( 10.809 | 13.522 | -0 )
+velocity galaxy 1: ( 211.587 | 91.3697 | 0 )
+velocity galaxy 2: ( -35.672 | -15.4042 | -0 )
+
+Galaxy 1 has Scalefactor = 17.1789
+Galaxy 2 has Scalefactor = 37.1811
+correcting orbit for dark halo potential...
+galaxy 1 moved to: ( -60.0062 | -116.447 | 0 )
+galaxy 2 moved to: ( 8.65707 | 16.7997 | -0 )
+velocity galaxy 1: ( 208.206 | 111.854 | 0 )
+velocity galaxy 2: ( -30.0378 | -16.1371 | -0 )
+
+Galaxy 1 has Scalefactor = 42.0991
+Galaxy 2 has Scalefactor = 17.1789
+correcting orbit for dark halo potential...
+galaxy 1 moved to: ( -20.1205 | -9.66783 | 0 )
+galaxy 2 moved to: ( 159.585 | 76.6801 | -0 )
+velocity galaxy 1: ( 28.834 | 6.26566 | 0 )
+velocity galaxy 2: ( -228.696 | -49.6959 | -0 )
+
+Galaxy 1 has Scalefactor = 47.1976
+Galaxy 2 has Scalefactor = 17.1789
+correcting orbit for dark halo potential...
+galaxy 1 moved to: ( -19.4658 | -23.0766 | 0 )
+galaxy 2 moved to: ( 173.858 | 206.108 | -0 )
+velocity galaxy 1: ( 19.7981 | 8.51159 | 0 )
+velocity galaxy 2: ( -176.826 | -76.021 | -0 )
+
+
+
+
+# -------------------------------------------
+
+# now, we alter the orbital eccentricities,
+# to slow down the orbits
+
+
+ecc= 0.9
+Rstart=100
+rmax=190	
+galaxy 1 moved to: ( -15.1733 | -7.34877 | 0 )
+galaxy 2 moved to: ( 74.8267 | 36.2402 | -0 )
+velocity galaxy 1: ( 37.4205 | 2.39584e-15 | 0 )
+velocity galaxy 2: ( -184.538 | -1.1815e-14 | -0 )
+
+ecc= 0.8
+Rstart=120
+rmax=180	
+galaxy 1 moved to: ( -89.8517 | -49.7134 | 0 )
+galaxy 2 moved to: ( 15.1483 | 8.3813 | -0 )
+velocity galaxy 1: ( 165.671 | -25.6656 | 0 )
+velocity galaxy 2: ( -27.9308 | 4.32702 | -0 )
+
+ecc= 0.7
+Rstart=150
+rmax=170	
+galaxy 1 moved to: ( -123.597 | -43.6782 | 0 )
+galaxy 2 moved to: ( 17.8313 | 6.30143 | -0 )
+velocity galaxy 1: ( 104.654 | -76.2791 | 0 )
+velocity galaxy 2: ( -15.0984 | 11.0048 | -0 )
+
+ecc= 0.65
+Rstart=200
+rmax=235.714	
+galaxy 1 moved to: ( -20.2396 | -9.5809 | 0 )
+galaxy 2 moved to: ( 160.53 | 75.9906 | -0 )
+velocity galaxy 1: ( 14.3649 | -8.52263 | 0 )
+velocity galaxy 2: ( -113.935 | 67.5969 | -0 )
+
+ecc= 0.6
+Rstart=250
+rmax=280	
+galaxy 1 moved to: ( -23.1587 | -9.86557 | 0 )
+galaxy 2 moved to: ( 206.841 | 88.114 | -0 )
+velocity galaxy 1: ( 10.7095 | -8.74431 | 0 )
+velocity galaxy 2: ( -95.652 | 78.0995 | -0 )
+

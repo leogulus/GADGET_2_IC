@@ -1,0 +1,601 @@
+TACC: Setting memory limits for job 2099874 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 16way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+
+fname=testMDsk
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2099874
+TACC: Done.
+TACC: Setting memory limits for job 2268176 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+
+fname=highz_lr_wf
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2268176
+TACC: Done.
+TACC: Setting memory limits for job 2268199 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+
+fname=highz_lr_nf
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2268199
+TACC: Done.
+TACC: Setting memory limits for job 2268492 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+
+fname=highz_lr_wf_polar
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2268492
+TACC: Done.
+TACC: Setting memory limits for job 2268502 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+
+fname=highz_lr_wf_retro
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2268502
+TACC: Done.
+TACC: Setting memory limits for job 2268508 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+
+fname=highz_lr_wf_double
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2268508
+TACC: Done.
+TACC: Setting memory limits for job 2268522 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+
+fname=highz_lr_wf_narrow
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2268522
+TACC: Done.
+TACC: Setting memory limits for job 2614731 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+#$ -A TG-AST090039
+
+fname=highz_lr_wf_2
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2614731
+TACC: Done.
+TACC: Setting memory limits for job 2615123 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+#$ -A TG-AST090039
+
+fname=highz_lr_wf_2lo
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2615123
+TACC: Done.
+TACC: Setting memory limits for job 2615405 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+#$ -A TG-AST090039
+
+fname=highz_lr_wf_2lo
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2615405
+TACC: Done.
+TACC: Setting memory limits for job 2615886 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+#$ -A TG-AST090039
+
+fname=highz_lr_wf_2lo
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2615886
+TACC: Done.
+TACC: Setting memory limits for job 2616133 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+#$ -A TG-AST090039
+
+fname=highz_lr_wf_3lo
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2616133
+TACC: Done.
+TACC: Setting memory limits for job 2616284 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+#$ -A TG-AST090039
+
+fname=highz_lr_wf_3
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2616284
+TACC: Done.
+TACC: Setting memory limits for job 2616567 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+#$ -A TG-AST090039
+
+fname=highz_lr_wf_3r
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2616567
+TACC: Done.
+TACC: Setting memory limits for job 2616573 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+#$ -A TG-AST090039
+
+fname=highz_lr_wf_3p
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2616573
+TACC: Done.
+TACC: Setting memory limits for job 2616578 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+#$ -A TG-AST090039
+
+fname=highz_lr_wf_3d
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2616578
+TACC: Done.
+TACC: Setting memory limits for job 2616605 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+#$ -A TG-AST090039
+
+fname=highz_lr_wf_3n
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2616605
+TACC: Done.
+TACC: Setting memory limits for job 2622838 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+#$ -A TG-AST090039
+
+fname=mw_lr_wf_3
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2622838
+TACC: Done.
+TACC: Setting memory limits for job 2622854 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+#$ -A TG-AST090039
+
+fname=mw_lr_3
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2622854
+TACC: Done.
+TACC: Setting memory limits for job 2625696 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+#$ -A TG-AST090039
+
+fname=mw_lr_wf_3hf
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2625696
+TACC: Done.
+TACC: Setting memory limits for job 2968754 to unlimited KB
+TACC: Dumping job script:
+--------------------------------------------------------------------------------
+#!/bin/sh
+
+#$ -q development
+#$ -l h_rt=02:00:00
+#$ -pe 1way 16
+#$ -M phopkins@astro.berkeley.edu
+#$ -m e
+#$ -N mdsk
+#$ -j y
+#$ -o mdsk.out
+#$ -cwd
+#$ -V
+
+fname=highz_lr_wf_3w
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+
+--------------------------------------------------------------------------------
+TACC: Done.
+TACC: Cleaning up after job: 2968754
+TACC: Done.

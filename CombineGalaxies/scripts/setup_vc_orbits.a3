@@ -1,0 +1,27 @@
+#!/bin/bash
+
+
+#./CombineGalaxies ../MakeNewDisk/a3.dat 0 0 ../MakeNewDisk/a3.dat 0 0 5.0 100.0 ../ICs/a3a3.dat
+#./CombineGalaxies ../MakeNewDisk/a3_1x.dat 0 0 ../MakeNewDisk/a3_1x.dat 0 0 5.0 100.0 ../ICs/a3a3_1x.dat
+
+#./CombineGalaxies ../MakeNewDisk/a3_cless.dat 0 0 ../MakeNewDisk/a3_cless.dat 0 0 5.0 100.0 ../ICs/a3a3_cless.dat
+#./CombineGalaxies ../MakeNewDisk/a3_1x_cless.dat 0 0 ../MakeNewDisk/a3_1x_cless.dat 0 0 5.0 100.0 ../ICs/a3a3_1x_cless.dat
+
+
+#./CombineGalaxies ../MakeNewDisk/a0.dat 30 60 ../MakeNewDisk/a0.dat -30 45 5.0 100.0 ../ICs/a0a0e.dat
+#./CombineGalaxies ../MakeNewDisk/a1.dat 30 60 ../MakeNewDisk/a1.dat -30 45 5.0 100.0 ../ICs/a1a1e.dat
+#./CombineGalaxies ../MakeNewDisk/a2.dat 30 60 ../MakeNewDisk/a2.dat -30 45 5.0 100.0 ../ICs/a2a2e.dat
+#./CombineGalaxies ../MakeNewDisk/a3.dat 30 60 ../MakeNewDisk/a3.dat -30 45 5.0 100.0 ../ICs/a3a3e.dat
+#./CombineGalaxies ../MakeNewDisk/a4.dat 30 60 ../MakeNewDisk/a4.dat -30 45 5.0 100.0 ../ICs/a4a4e.dat
+#./CombineGalaxies ../MakeNewDisk/a5.dat 30 60 ../MakeNewDisk/a5.dat -30 45 5.0 100.0 ../ICs/a5a5e.dat
+#./CombineGalaxies ../MakeNewDisk/a6.dat 30 60 ../MakeNewDisk/a6.dat -30 45 5.0 100.0 ../ICs/a6a6e.dat
+
+
+#./CombineGalaxies ../MakeNewDisk/a/a0.dat 0 0 ../MakeNewDisk/a/a0.dat 0 0 5.0 100.0 ../ICs/a0a0.dat
+#./CombineGalaxies ../MakeNewDisk/a/a6.dat 0 0 ../MakeNewDisk/a/a6.dat 0 0 5.0 100.0 ../ICs/a6a6.dat
+#./CombineGalaxies ../MakeNewDisk/a4.dat 0 0 ../MakeNewDisk/a4.dat 0 0 8.0 150.0 /raid4/tcox/ICs/a4a4.dat
+#./CombineGalaxies ../MakeNewDisk/a5.dat 0 0 ../MakeNewDisk/a5.dat 0 0 10.0 250.0 /raid4/tcox/ICs/a5a5.dat
+./CombineGalaxies ../MakeNewDisk/a7.dat 0 0 ../MakeNewDisk/a7.dat 0 0 20.0 320.0 /raid4/tcox/ICs/a7a7.dat
+
+
+

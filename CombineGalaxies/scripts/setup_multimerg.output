@@ -1,0 +1,213 @@
+#---------------------------------------------
+#
+#  mm1
+#
+#
+
+
+
+Galaxy 1 has Scalefactor = 29.2702
+Galaxy 2 has Scalefactor = 29.2702
+rdotstart = -37.5413
+phidotstart = 6.70297e-05
+r*phidotstart = 0.00670297
+Relative V= 37.5494
+correcting orbit for dark halo potential...
+Relative V (post OC)= 317.404
+galaxy 1 moved to: ( -43.9787 | -23.7256 | 0 )
+galaxy 2 moved to: ( 43.9787 | 23.7256 | -0 )
+velocity galaxy 1: ( 155.367 | 32.3664 | 0 )
+velocity galaxy 2: ( -155.367 | -32.3664 | -0 )
+
+Galaxy 1 has Scalefactor = 29.2702
+Galaxy 2 has Scalefactor = 42.5016
+rdotstart = -41.519
+phidotstart = 7.7238e-05
+r*phidotstart = 0.00926857
+Relative V= 41.5336
+correcting orbit for dark halo potential...
+Relative V (post OC)= 342.522
+galaxy 1 moved to: ( -62.0438 | -50.2967 | 0 )
+galaxy 2 moved to: ( 31.0219 | 25.1483 | -0 )
+velocity galaxy 1: ( 218.864 | 65.1266 | 0 )
+velocity galaxy 2: ( -109.432 | -32.5633 | -0 )
+
+Galaxy 1 has Scalefactor = 48.7412
+Galaxy 2 has Scalefactor = 29.2702
+rdotstart = -45.9563
+phidotstart = 0.000130754
+r*phidotstart = 0.0183055
+Relative V= 46.0009
+correcting orbit for dark halo potential...
+Relative V (post OC)= 392.929
+galaxy 1 moved to: ( -17.453 | -30.2821 | 0 )
+galaxy 2 moved to: ( 52.3591 | 90.8462 | -0 )
+velocity galaxy 1: ( 88.8535 | 41.8883 | 0 )
+velocity galaxy 2: ( -266.561 | -125.665 | -0 )
+
+Galaxy 1 has Scalefactor = 29.2702
+Galaxy 2 has Scalefactor = 54.7034
+rdotstart = -49.5667
+phidotstart = 3.98969e-05
+r*phidotstart = 0.00718145
+Relative V= 49.5712
+correcting orbit for dark halo potential...
+Relative V (post OC)= 392.595
+galaxy 1 moved to: ( -138.324 | -39.4768 | 0 )
+galaxy 2 moved to: ( 34.5809 | 9.8692 | -0 )
+velocity galaxy 1: ( 311.805 | 37.6986 | 0 )
+velocity galaxy 2: ( -77.9513 | -9.42465 | -0 )
+
+
+
+
+
+#---------------------------------------------
+#
+#  mm2
+#
+#
+
+
+Galaxy 1 has Scalefactor = 42.5016
+Galaxy 2 has Scalefactor = 42.5016
+rdotstart = -44.0423
+phidotstart = 8.99192e-05
+r*phidotstart = 0.0125887
+Relative V= 44.0684
+correcting orbit for dark halo potential...
+Relative V (post OC)= 370.981
+galaxy 1 moved to: ( -44.9983 | -53.4955 | 0 )
+galaxy 2 moved to: ( 44.9983 | 53.4955 | -0 )
+velocity galaxy 1: ( 173.908 | 64.5199 | 0 )
+velocity galaxy 2: ( -173.908 | -64.5199 | -0 )
+
+
+
+
+#---------------------------------------------
+#
+#  mm3
+#
+#
+
+rdotstart = -394.522
+phidotstart = 0.905096
+r*phidotstart = 90.5096
+Relative V= 404.771
+Relative V (post OC)= 404.771
+galaxy 1 moved to: ( -45 | -21.7945 | 0 )
+galaxy 2 moved to: ( 45 | 21.7945 | -0 )
+velocity galaxy 1: ( 197.261 | 45.2548 | 0 )
+velocity galaxy 2: ( -197.261 | -45.2548 | -0 )
+
+rdotstart = -447.906
+phidotstart = 1.30612
+r*phidotstart = 182.857
+Relative V= 483.794
+Relative V (post OC)= 483.794
+galaxy 1 moved to: ( -50 | -48.9898 | 0 )
+galaxy 2 moved to: ( 50 | 48.9898 | -0 )
+velocity galaxy 1: ( 223.953 | 91.4285 | 0 )
+velocity galaxy 2: ( -223.953 | -91.4285 | -0 )
+
+rdotstart = -301.699
+phidotstart = 0.899491
+r*phidotstart = 134.924
+Relative V= 330.494
+Relative V (post OC)= 330.494
+galaxy 1 moved to: ( -50 | -55.9017 | 0 )
+galaxy 2 moved to: ( 50 | 55.9017 | -0 )
+velocity galaxy 1: ( 150.849 | 67.4618 | 0 )
+velocity galaxy 2: ( -150.849 | -67.4618 | -0 )
+
+rdotstart = -399.679
+phidotstart = 0.32
+r*phidotstart = 63.9999
+Relative V= 404.771
+Relative V (post OC)= 404.771
+galaxy 1 moved to: ( -95 | -31.225 | 0 )
+galaxy 2 moved to: ( 95 | 31.225 | -0 )
+velocity galaxy 1: ( 199.84 | 32 | 0 )
+velocity galaxy 2: ( -199.84 | -32 | -0 )
+
+rdotstart = -313.534
+phidotstart = 0.696743
+r*phidotstart = 104.511
+Relative V= 330.494
+Relative V (post OC)= 330.494
+galaxy 1 moved to: ( -60 | -45 | 0 )
+galaxy 2 moved to: ( 60 | 45 | -0 )
+velocity galaxy 1: ( 156.767 | 52.2557 | 0 )
+velocity galaxy 2: ( -156.767 | -52.2557 | -0 )
+
+rdotstart = -289.379
+phidotstart = 1.06429
+r*phidotstart = 159.644
+Relative V= 330.494
+Relative V (post OC)= 330.494
+galaxy 1 moved to: ( -40 | -63.4429 | 0 )
+galaxy 2 moved to: ( 40 | 63.4429 | -0 )
+velocity galaxy 1: ( 144.69 | 79.8219 | 0 )
+velocity galaxy 2: ( -144.69 | -79.8219 | -0 )
+
+rdotstart = -445.421
+phidotstart = 0.499999
+r*phidotstart = 79.9999
+Relative V= 452.548
+Relative V (post OC)= 452.548
+galaxy 1 moved to: ( -75 | -27.8388 | 0 )
+galaxy 2 moved to: ( 75 | 27.8388 | -0 )
+velocity galaxy 1: ( 222.71 | 40 | 0 )
+velocity galaxy 2: ( -222.71 | -40 | -0 )
+
+rdotstart = -509.947
+phidotstart = 0.183178
+r*phidotstart = 45.7946
+Relative V= 511.999
+Relative V (post OC)= 511.999
+galaxy 1 moved to: ( -123 | -22.2711 | 0 )
+galaxy 2 moved to: ( 123 | 22.2711 | -0 )
+velocity galaxy 1: ( 254.974 | 22.8973 | 0 )
+velocity galaxy 2: ( -254.974 | -22.8973 | -0 )
+
+
+
+
+
+#
+#
+# mm6, mm7, mm8
+#
+#
+# ----------------------------------
+rdotstart = -365.714
+phidotstart = 2.26227
+r*phidotstart = 316.717
+Relative V= 483.794
+Relative V (post OC)= 483.794
+galaxy 1 moved to: ( -10 | -69.282 | 0 )
+galaxy 2 moved to: ( 10 | 69.282 | -0 )
+velocity galaxy 1: ( 182.857 | 158.359 | 0 )
+velocity galaxy 2: ( -182.857 | -158.359 | -0 )
+
+rdotstart = -475.076
+phidotstart = 0.65306
+r*phidotstart = 91.4285
+Relative V= 483.794
+Relative V (post OC)= 483.794
+galaxy 1 moved to: ( -65 | -25.9808 | 0 )
+galaxy 2 moved to: ( 65 | 25.9808 | -0 )
+velocity galaxy 1: ( 237.538 | 45.7142 | 0 )
+velocity galaxy 2: ( -237.538 | -45.7142 | -0 )
+
+rdotstart = -447.906
+phidotstart = 1.30612
+r*phidotstart = 182.857
+Relative V= 483.794
+Relative V (post OC)= 483.794
+galaxy 1 moved to: ( -50 | -48.9898 | 0 )
+galaxy 2 moved to: ( 50 | 48.9898 | -0 )
+velocity galaxy 1: ( 223.953 | 91.4285 | 0 )
+velocity galaxy 2: ( -223.953 | -91.4285 | -0 )
+

@@ -1,0 +1,16 @@
+#!/bin/sh
+
+#SBATCH -J makenewdisk
+#SBATCH -N 1 -n 1
+#SBATCH -p serial
+#SBATCH -t 01:00:00
+#SBATCH -o %j.out
+
+fname=testing
+dir=$WORK/sim_ICs/
+
+cd ~/MakeNewDisk/
+cp MakeHubbleType $dir
+cd $dir
+./MakeHubbleType $fname.dat > $fname.out
+

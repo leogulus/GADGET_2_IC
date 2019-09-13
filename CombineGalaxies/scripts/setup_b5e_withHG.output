@@ -1,0 +1,68 @@
+
+#
+#
+#  b5e + cosmic baryons
+# -----------------------------
+
+Galaxy 1 has Scalefactor = 60.9797
+Galaxy 2 has Scalefactor = 60.9797
+rdotstart = -78.0943
+phidotstart = 6.55767e-05
+r*phidotstart = 0.0163942
+Relative V= 78.1105
+correcting orbit for dark halo potential...
+galaxy 1 moved to: ( -113.177 | -52.4001 | 0 )
+galaxy 2 moved to: ( 113.177 | 52.4001 | -0 )
+velocity galaxy 1: ( 313.194 | 60.1122 | 0 )
+velocity galaxy 2: ( -313.194 | -60.1122 | -0 )
+
+
+
+#
+#
+#  b5e + cosmic baryons + hole
+# -----------------------------
+
+Galaxy 1 has Scalefactor = 60.9797
+Galaxy 2 has Scalefactor = 60.9797
+rdotstart = -78.0943
+phidotstart = 6.55767e-05
+r*phidotstart = 0.0163942
+Relative V= 78.1105
+correcting orbit for dark halo potential...
+galaxy 1 moved to: ( -113.177 | -52.4001 | 0 )
+galaxy 2 moved to: ( 113.177 | 52.4001 | -0 )
+velocity galaxy 1: ( 313.194 | 60.1122 | 0 )
+velocity galaxy 2: ( -313.194 | -60.1122 | -0 )
+
+
+
+#  Same two runs as above only
+# we fixed the NaN in the timeline upone
+# startup.  Not sure if we succeded.
+# -----------------------------
+
+Galaxy 1 has Scalefactor = 60.9797
+Galaxy 2 has Scalefactor = 60.9797
+rdotstart = -78.0943
+phidotstart = 6.55767e-05
+r*phidotstart = 0.0163942
+Relative V= 78.1105
+correcting orbit for dark halo potential...
+galaxy 1 moved to: ( -113.177 | -52.4001 | 0 )
+galaxy 2 moved to: ( 113.177 | 52.4001 | -0 )
+velocity galaxy 1: ( 313.194 | 60.1122 | 0 )
+velocity galaxy 2: ( -313.194 | -60.1122 | -0 )
+
+Galaxy 1 has Scalefactor = 60.9797
+Galaxy 2 has Scalefactor = 60.9797
+rdotstart = -78.0943
+phidotstart = 6.55767e-05
+r*phidotstart = 0.0163942
+Relative V= 78.1105
+correcting orbit for dark halo potential...
+galaxy 1 moved to: ( -113.177 | -52.4001 | 0 )
+galaxy 2 moved to: ( 113.177 | 52.4001 | -0 )
+velocity galaxy 1: ( 313.194 | 60.1122 | 0 )
+velocity galaxy 2: ( -313.194 | -60.1122 | -0 )
+

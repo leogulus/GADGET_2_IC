@@ -1,0 +1,36 @@
+Galaxy 1 has Scalefactor = 29.343
+Galaxy 2 has Scalefactor = 29.343
+rdotstart = -37.4947
+phidotstart = 6.66976e-05
+r*phidotstart = 0.00666976
+Relative V= 37.5028
+correcting orbit for dark halo potential...
+galaxy 1 moved to: ( -43.856 | -23.8213 | 0 )
+galaxy 2 moved to: ( 43.856 | 23.8213 | -0 )
+velocity galaxy 1: ( 154.97 | 32.5803 | 0 )
+velocity galaxy 2: ( -154.97 | -32.5803 | -0 )
+
+Galaxy 1 has Scalefactor = 29.2974
+Galaxy 2 has Scalefactor = 29.2974
+rdotstart = -37.5239
+phidotstart = 6.69054e-05
+r*phidotstart = 0.00669054
+Relative V= 37.5319
+correcting orbit for dark halo potential...
+galaxy 1 moved to: ( -43.8947 | -23.7027 | 0 )
+galaxy 2 moved to: ( 43.8947 | 23.7027 | -0 )
+velocity galaxy 1: ( 155.482 | 32.4092 | 0 )
+velocity galaxy 2: ( -155.482 | -32.4092 | -0 )
+
+Galaxy 1 has Scalefactor = 29.2811
+Galaxy 2 has Scalefactor = 29.2811
+rdotstart = -37.5343
+phidotstart = 6.698e-05
+r*phidotstart = 0.006698
+Relative V= 37.5424
+correcting orbit for dark halo potential...
+galaxy 1 moved to: ( -43.8727 | -23.7935 | 0 )
+galaxy 2 moved to: ( 43.8727 | 23.7935 | -0 )
+velocity galaxy 1: ( 161.281 | 35.8927 | 0 )
+velocity galaxy 2: ( -161.281 | -35.8927 | -0 )
+
