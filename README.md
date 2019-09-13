@@ -13,7 +13,7 @@ These two codes are required to generate new initial condition (IC) code for GAD
 ## Usage
 ### MW
 - `make clean` :To clear previous complied files
-- `make`: To compile the code. The code is needed to compiled everytime the parameters are changed in `main.c`.
+- `make`: To compile the code. The code is needed to be compiled everytime the parameters are changed in `main.c`.
 - `./MakeHubbleType galaxy.dat`: To run with code with <output_name> (galaxy.dat).
 
 All important parameters are in `main.c`. The important parameters to be changed include 
