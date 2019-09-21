@@ -25,7 +25,7 @@ int main(int argc,char *argv[])
   LAMBDA= 0.033;       		/* spin parameter          */
 
   M_DISK = 4.725;   		/* total disk mass in units of 10^10 Msolar */
-  M_GAS  = 0.900;   		/* total gas mass in units of 10^10 Msolar */
+  M_GAS  = 0.000;   		/* total gas mass in units of 10^10 Msolar */
   M_BULGE= 1.500;   		/* total bulge mass in units of 10^10 Msolar */
   M_BH   =0.0003;			/* seed BH mass in units of 10^10 Msolar */
 
@@ -41,7 +41,7 @@ int main(int argc,char *argv[])
 
   N_HALO=   10000;        /* desired number of particles in dark halo */
   N_DISK=   5000;        /* desired number of collisionless particles in disk */
-  N_GAS=    10000;        /* number of gas particles in disk */ 
+  N_GAS=    0;        /* number of gas particles in disk */ 
   N_BULGE=  0;        /* number of bulge particles */ 
 
   HUBBLE = 0.70;			/* Hubble parameter (1 means units of h-1)*/
@@ -89,9 +89,9 @@ int main(int argc,char *argv[])
   MB= M_BULGE/Mvir;
   GasFraction= M_GAS/(M_DISK+M_GAS);
   
-  N_GAS_DISK = N_GAS;
-  N_GAS_FLOW = (int)(ColdFlowExtraMgas/(M_GAS/((float)N_GAS_DISK)));
-  N_GAS = N_GAS_DISK + N_GAS_FLOW;
+  // N_GAS_DISK = N_GAS;
+  // N_GAS_FLOW = (int)(ColdFlowExtraMgas/(M_GAS/((float)N_GAS_DISK)));
+  // N_GAS = N_GAS_DISK + N_GAS_FLOW;
 
   /**********************************************************/
 
