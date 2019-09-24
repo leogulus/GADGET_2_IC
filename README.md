@@ -1,4 +1,4 @@
-# GADGET_2_IC README
+# GADGET 2 IC (Initial Condition) README
 
 These two codes are required to generate new initial condition (IC) code for GADGET-2.
 
@@ -40,4 +40,22 @@ N_BULGE=  0;        /* number of bulge particles */
 - <eccentricity>: eccentricity of the orbit
 - <fname_galout>: output name "name.dat"
 
+## To include gas in your simulation
+The default file that I have in here has no gas. To be able to run simulation with gas, you will need to edit `main.c` file to include the gas. 
 
+1. Uncomment these three lines in `main.c` so that the code can calculate the number of gas in the simulation.
+```  
+  // N_GAS_DISK = N_GAS;
+  // N_GAS_FLOW = (int)(ColdFlowExtraMgas/(M_GAS/((float)N_GAS_DISK)));
+  // N_GAS = N_GAS_DISK + N_GAS_FLOW;
+```
+
+2. Change these parameters to include the gas. (M_GAS = 0.900, N_GAS to the same as N_HALO)
+```
+M_GAS  = 0.000;   		/* total gas mass in units of 10^10 Msolar */
+N_GAS  =    0;        /* number of gas particles in disk */ 
+```
+
+Don't forget to complie again before running the new version
+
+Good luck!
