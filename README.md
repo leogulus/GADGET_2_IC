@@ -55,7 +55,10 @@ The default file that I have in here has no gas. To be able to run simulation wi
 M_GAS  = 0.000;   		/* total gas mass in units of 10^10 Msolar */
 N_GAS  =    0;        /* number of gas particles in disk */ 
 ```
-
 Don't forget to complie again before running the new version
+
+
+# Additional Information about Gadget 2
+There are several formats of the output that you can use. I would recommend using hdf5 (`SnapFormat = 3`), which means that you will have to install Gadget 2 with HDF5 module, so that you can actually use this file format.
 
 Good luck!
